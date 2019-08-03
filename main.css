@@ -6,8 +6,9 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   display: grid;
-  grid-template-columns: 50px 2fr 1fr 50px;
+  grid-template-columns: 100px 2fr 2fr 20px;
 }
 .btn {
   background-color: #fff;
@@ -50,6 +51,7 @@ body {
 
 header {
   height: 50px;
+  width: 100vw;
   grid-column: 1/-1;
   border: 3px #00bcdd solid;
   border-image: linear-gradient(45deg, #00bcdd 0%, #f0f 100%);
@@ -69,14 +71,31 @@ ul {
 }
 
 li {
-  padding-right: 20px;
+  padding-right: 40px;
   margin: auto 0;
 }
 
 li:last-child {
-  padding-right: 0;
+  padding-right: 50px;
 }
 
 .larger-text {
   font-size: 1.5em;
+}
+
+.work-grid {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+}
+
+.work-grid h1 {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+img {
+  margin-top: 20px;
+  margin-left: 50px;
+  max-width: 80%;
 }
