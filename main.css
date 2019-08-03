@@ -8,8 +8,9 @@ body {
   padding: 0;
   overflow-x: hidden;
   display: grid;
-  grid-template-columns: 100px 2fr 2fr 20px;
+  grid-template-columns: 80px 2fr 2fr 20px;
 }
+
 .btn {
   background-color: #fff;
   color: #101832;
@@ -43,11 +44,12 @@ body {
   font-weight: bold;
 }
 
-.container {
+#intro {
   width: 100%;
-  grid-column: 2;
   margin-top: 50px;
+  grid-column: 2;
 }
+
 
 header {
   height: 50px;
@@ -83,19 +85,36 @@ li:last-child {
   font-size: 1.5em;
 }
 
-.work-grid {
-  grid-column: 2/4;
+#work {
+  grid-column: 1/-1;
   display: grid;
-  grid-template-columns: repeat(4, 1fr)
+  grid-template-columns: 50px 1fr 50px;
+}
+
+.work-grid {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.work-grid i {
+  color: rgb(153, 0, 255);
 }
 
 .work-grid h1 {
   grid-column: 1/-1;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.work-project p {
+  text-align: left;
 }
 
 img {
   margin-top: 20px;
   margin-left: 50px;
-  max-width: 80%;
+  max-width: 300px;
 }
