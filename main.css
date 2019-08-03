@@ -52,6 +52,10 @@ header {
   font-weight: bold;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .btn {
   bottom: 150px;
   background-color: #fff;
@@ -163,9 +167,33 @@ img {
     font-size: 80%;
   }
 
+  header {
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+  }
+
+  .main-nav ul {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+    width: 40px;
+    height: 50px;
+  }
+
+  .burger-line {
+    background: linear-gradient(5deg, #00bcdd 0%, #f0f 100%);
+    width: 100%;
+    height: 6px;
+    margin: 4px;
+  }
+
   #intro {
     grid-row: 3;
-
     margin-top: 5px;
     width: 100%;
   }
@@ -176,7 +204,7 @@ img {
 
   .btn {
     display: block;
-  margin: 30px auto;
+    margin: 30px auto;
   }
 
   img {
