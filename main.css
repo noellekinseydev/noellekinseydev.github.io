@@ -5,18 +5,22 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: 30px 1fr 30px;
   color: #0e0b16;
 }
 
 header {
   grid-column: 1/-1;
+  vertical-align: middle;
 }
 
 nav {
   height: 50px;
   grid-column: 2;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 main {
@@ -36,15 +40,18 @@ a:hover {
   font-weight: bold;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 /*******************
 *** GHOST BUTTON ***
 *******************/
 .ghost-button {
-  bottom: 150px;
   background-color: #fff;
   color: #101832;
   cursor: pointer;
-  display: inline-block;
   letter-spacing: 0.075em;
   padding: 0.8em 1em;
   font-family: "Inconsolata", monospace;
@@ -62,6 +69,8 @@ a:hover {
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
+
+  margin: 20px auto;
   transition: all 200ms ease-in-out;
 }
 
@@ -86,6 +95,13 @@ a:hover {
   grid-template-columns: 20px 1fr 20px;
 }
 
+.gray-text {
+  color: gray;
+  font-size: 1em;
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #main-nav-list li,
 #skills-list li,
 #projects-list li {
@@ -105,14 +121,19 @@ a:hover {
 #intro {
   text-align: center;
   padding: 20px 0;
+  font-family: "Inconsolata", monospace;
+  display: flex;
+  flex-direction: column;
 }
 
 #introduction {
   text-align: left;
+  font-size: 15px;
   padding-bottom: 25px;
 }
 
-#intro h1, h2 {
+#intro h1,
+h2 {
   margin: 15px 0px;
   padding: 0px;
   font-family: "Inconsolata", monospace;
@@ -123,12 +144,14 @@ a:hover {
 }
 
 #intro h2 {
-  font-weight: 500;
-  font-size: 1.5em;
+  color: #007add;
+
+  font-size: 1.25em;
 }
 
 #hero-img {
   max-width: 150px;
+  align-self: center;
 }
 
 #introduction p {
@@ -136,6 +159,16 @@ a:hover {
   line-height: 1.5;
 }
 
+.skill {
+  width: 100%;
+}
 
+.skill p {
+  padding-left: 65px;
+}
 
-
+.skill figure {
+  margin: 0;
+  padding: 25px 10px;
+  float: left;
+}
