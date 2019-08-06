@@ -9,66 +9,107 @@
     <script src="https://kit.fontawesome.com/840f47d171.js"></script>
   </head>
   <body>
-    <header>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">work</a></li>
+    <!--Top Navigation-->
+    <header class="grid3x20 gradient-border">
+      <nav>
+        <ul id="main-nav-list">
           <li><a href="#">about</a></li>
+          <li><a href="#">work</a></li>
           <li><a href="#">contact</a></li>
         </ul>
-
-        <div class="burger-menu">
-          <div class="burger-line"></div>
-          <div class="burger-line"></div>
-          <div class="burger-line"></div>
-        </div>
       </nav>
     </header>
 
-    <section id="intro">
-      <div class="container">
-        <i class="fas fa-quote-left fa-2x"></i>
-        <h1>Hello. I'm Noey.</h1>
-        <p class="larger-text">I guess this is a tagline.</p>
-        <p>
-          This is some more brief intro text about me that is smaller and if
-          people want to know more they are encourage to click on the enticing
-          button below:
-        </p>
-        <button class="btn">View My Work</button>
-      </div>
-    </section>
+    <!--Main-->
+    <main>
+      <!--Intro & Hero Image-->
+      <section id="intro">
+        <h1>Intro</h1>
+        <article id="introduction">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            provident dolore fuga. Architecto nisi molestiae ipsam rerum
+            suscipit amet, quo porro veritatis nostrum labore hic eos, dolorem
+            cumque. Excepturi, est. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Fugit provident dolore fuga. Architecto nisi
+            molestiae ipsam rerum suscipit amet, quo porro veritatis nostrum
+            labore hic eos, dolorem cumque. Excepturi, est.
+          </p>
 
-    <img src="noey.png" />
+          <button class="ghost-button">View My Work</button>
+        </article>
 
-    <section id="skills">
-      <div class="skills-grid">
+        <img id="hero-img" src="noey.png" />
+      </section>
+
+      <!--Skills & Services-->
+      <section id="skills">
         <h1>Skills</h1>
+        <!--Skill 1-->
+        <ul id="skills-list">
+          <li class="skill">
+            <figure>
+              <i class="fas fa-desktop fa-2x" aria-hidden="true"></i>
+              <figcaption>Development</figcaption>
+            </li>
+          <!--Skill 2-->
+          <li class="skill">
+            <figure>
+              <i class="fas fa-desktop fa-2x" aria-hidden="true"></i>
+              <figcaption>Design</figcaption>
+            </figure>
+          </li>
+          <!--Skill 3-->
+          <li class="skill">
+            <figure>
+              <i class="fas fa-desktop fa-2x" aria-hidden="true"></i>
+              <figcaption>Content</figcaption>
+            </figure>
+          </li>
+          <!--Skill 4-->
+          <li class="skill">
+            <figure>
+              <i class="fas fa-desktop fa-2x" aria-hidden="true"></i>
+              <figcaption>Analytics</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
 
-        <div class="skills-project">
-          <i class="fas fa-desktop fa-2x"></i>
-          <h3>Development</h3>
-          <p>Work work work work work</p>
-        </div>
+      <!--Projects & Showcases-->
+      <section id="projects">
+        <h1>Featured Projects</h1>
+        <ul id="projects-list">
+          <li>
+            <figure>
+              <i class="fas fa-desktop fa-2x" aria-hidden="true"></i>
+              <figcaption>Content</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="fas fa-desktop fa-2x" aria-hidden="true"></i>
+              <figcaption>Content</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="fas fa-desktop fa-2x" aria-hidden="true"></i>
+              <figcaption>Content</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <i class="fas fa-desktop fa-2x" aria-hidden="true"></i>
+              <figcaption>Content</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-        <div class="skills-project">
-          <i class="fas fa-palette fa-2x"></i>
-          <h3>Design</h3>
-          <p>Work work work work work</p>
-        </div>
-
-        <div class="skills-project">
-          <i class="fas fa-moon fa-2x"></i>
-          <h3>Intention</h3>
-          <p>Work work work work work</p>
-        </div>
-
-        <div class="skills-project">
-          <i class="fas fa-pen fa-2x"></i>
-          <h3>Content</h3>
-          <p>Work work work work work</p>
-        </div>
-      </div>
-    </section>
+    <footer>
+      <p>Handcoded with ♥</p>
+    </footer>
   </body>
 </html>
