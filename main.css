@@ -102,8 +102,38 @@ a:hover {
   padding-right: 0px;
 }
 
+#intro {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#introduction {
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+#intro h1, h2 {
+  margin: 15px 0px;
+  padding: 0px;
+  font-family: "Inconsolata", monospace;
+}
+
+#intro h1 {
+  font-size: 2em;
+}
+
+#intro h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
 #hero-img {
-  max-width: 250px;
+  max-width: 150px;
+}
+
+#introduction p {
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 
