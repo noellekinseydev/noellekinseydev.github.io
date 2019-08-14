@@ -100,7 +100,7 @@ ul {
   transition: all 200ms ease-in-out;
 }
 
-.ghost-button:hover {
+.ghost-button:hover, .ghost-button:focus {
   background-size: 90%;
   transform: translate(0.5em, -0.5em);
   box-shadow: -1em 1em 0.15em rgba(55, 23, 97, 0.185);
@@ -211,7 +211,7 @@ h2 {
     border-image: linear-gradient(45deg, #00bcdd 0%, #f0f 100%);
     border-image-slice: 0 0 1 0;
   }
-  
+
   #main-nav-menu {
     display: none;
   }
