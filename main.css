@@ -12,6 +12,7 @@ body {
 header {
   grid-column: 1/-1;
   vertical-align: middle;
+  padding-bottom: 5px;
 }
 
 nav {
@@ -44,6 +45,35 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+/******************
+*** BURGER MENU ***
+******************/
+#main-nav-menu {
+  width: 60px;
+  margin-top: 8px;
+  height: auto;
+  grid-column: 2;
+  justify-self: flex-end;
+  border: none;
+  background: white;
+}
+
+.burger-line {
+  background: grey;
+  width: 50px;
+  height: 7px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #00bcdd 10%, #f0f 120%);
+}
+
+#main-nav {
+  display: none;
+}
+
+
 
 /*******************
 *** GHOST BUTTON ***
@@ -157,14 +187,20 @@ h2 {
   line-height: 1.5;
 }
 
-.skill {
-  font-size: 16px;
+
+#skills-list {
+  display: grid;
+  margin-left: -5px;
   width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
-.skill p {
-  padding-left: 65px;
+.skill {
+  font-size: 16px;
+  border: 1px solid black;
 }
+
 
 .skill figure {
   color: rgb(115, 37, 179);
