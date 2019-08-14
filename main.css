@@ -73,8 +73,6 @@ ul {
   display: none;
 }
 
-
-
 /*******************
 *** GHOST BUTTON ***
 *******************/
@@ -187,7 +185,6 @@ h2 {
   line-height: 1.5;
 }
 
-
 #skills-list {
   display: grid;
   margin-left: -5px;
@@ -201,10 +198,27 @@ h2 {
   border: 1px solid black;
 }
 
-
 .skill figure {
   color: rgb(115, 37, 179);
   margin: 0;
   padding: 25px 10px;
   float: left;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    border: 3px #00bcdd solid;
+    border-image: linear-gradient(45deg, #00bcdd 0%, #f0f 100%);
+    border-image-slice: 0 0 1 0;
+  }
+  
+  #main-nav-menu {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex;
+  }
+
+  
 }
