@@ -193,9 +193,6 @@ h2 {
 }
 
 #skills {
-  grid-template-columns: repeat(3, 1fr);
-
-  margin-left: -10px;
   width: 90vw;
 }
 
@@ -236,5 +233,9 @@ h2 {
 
   main {
     margin-top: 20px;
+  }
+
+  #skills-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
