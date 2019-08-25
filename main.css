@@ -187,26 +187,31 @@ h2 {
   line-height: 1.5;
 }
 
-#skills {
-  margin-left: -15px;
+#skills h1 {
+  margin-bottom: 15px;
 }
 
-#skills h1 {
-  margin-left: 15px;
+#skills {
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-left: -10px;
+  width: 90vw;
 }
+
 #skills-list {
   display: grid;
-  margin-left: -5px;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+  margin-left: -5px;
   text-align: center;
 }
 
 .skill {
-  font-size: 16px;
+  font-size: 15px;
+  padding: 5px;
   border: 3px #00bcdd solid;
   border-image: linear-gradient(45deg, #00bcdd 10%, #f0f 160%);
   border-image-slice: 1 1 1 1;
+  max-width: 100%;
 }
 
 .skill figure {
