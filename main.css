@@ -69,10 +69,41 @@ ul {
   margin-bottom: 5px;
   border-radius: 5px;
   background: linear-gradient(45deg, #00bcdd 10%, #f0f 120%);
+
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 #main-nav {
   display: none;
+}
+
+/***********************
+*** BURGER ANIMATION ***
+***********************/
+.rotate-down {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.fadeout {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.rotate-up {
+  -webkit-transform: rotate(45deg) translate(-10px, -10px) ;
+  transform: rotate(45deg) translate(-10px, -10px) ;
+}
+
+/**********************
+*** MOBILE NAV MENU ***
+**********************/
+.mobile-nav-open {
+  height: 100vh;
+  position: absolute;
+  opacity: .5;
 }
 
 /*******************
@@ -174,7 +205,6 @@ h2 {
 
 #intro h2 {
   color: rgb(115, 37, 179);
-
   font-size: 1.25em;
 }
 
