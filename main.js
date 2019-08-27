@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   burgerMenu.onclick = function(bars) {
     let mainNav = document.getElementById("main-nav");
-    let menuVisibility = mainNav.style.display;
-    console.log(menuVisibility);
 
     burgerMenu.classList.toggle("menu-open");
 
@@ -14,9 +12,5 @@ document.addEventListener("DOMContentLoaded", function() {
     barsCollection[0].classList.toggle("rotate-down");
     barsCollection[1].classList.toggle("fadeout");
     barsCollection[2].classList.toggle("rotate-up");
-
-    for (var i = 0; i < barsCollection.length; i++) {
-      console.log("1");
-    }
   };
 });
