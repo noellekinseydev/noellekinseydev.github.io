@@ -31,7 +31,18 @@ main {
 }
 
 footer {
+  border: 3px #00bcdd solid;
+  border-image: linear-gradient(45deg, #00bcdd 10%, #f0f 160%);
+  border-image-slice: 1 0 0 0;
   grid-column: 1/-1;
+  text-align: center;
+  height: 20px;
+  padding: 8px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -244,6 +255,10 @@ h2 {
 
 .skill figure {
   color: rgb(115, 37, 179);
+}
+
+#projects {
+  margin-top: 50px;
 }
 
 @media only screen and (min-width: 600px) {
