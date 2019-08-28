@@ -14,8 +14,35 @@ document.addEventListener("DOMContentLoaded", function() {
     barsCollection[2].classList.toggle("rotate-up");
   };
 
-  let skillsCollection = document.getElementsByClassName("skill");
-  skillsCollection[0].classList.add("animated");
-  skillsCollection[1].classList.add("animated");
-  skillsCollection[2].classList.add("animated");
+  var animateHTML = function() {
+    let skillsCollection = document.getElementsByClassName("skill");
+    var elems;
+    var windowHeight;
+    function init() {
+      windowHeight = window.innerHeight;
+      addEventHandlers();
+      checkPosition();
+    }
+    function addEventHandlers() {
+      window.addEventListener("scroll", checkPosition);
+      window.addEventListener("resize", init);
+    }
+    function checkPosition() {
+      var positionFromTop = skillsCollection[0].getBoundingClientRect().top;
+      if (positionFromTop - windowHeight + 50 <= 0) {
+        console.log(skillsCollection[0]);
+        skillsCollection[0].classList.add("animated", "bounceInLeft");
+        skillsCollection[1].classList.add("animated", "bounceInLeft");
+        skillsCollection[2].classList.add("animated", "bounceInLeft");
+      } else {
+        skillsCollection[0].classList.remove("animated", "bounceInLeft");
+        skillsCollection[1].classList.remove("animated", "bounceInLeft");
+        skillsCollection[2].classList.remove("animated", "bounceInLeft");
+      }
+    }
+    return {
+      init: init
+    };
+  };
+  animateHTML().init();
 });
