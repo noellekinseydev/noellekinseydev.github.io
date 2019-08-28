@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     function checkPosition() {
       var positionFromTop = skillsCollection[0].getBoundingClientRect().top;
-      if (positionFromTop - windowHeight + 50 <= 0) {
+      if (positionFromTop - windowHeight + 150 <= 0) {
         console.log(skillsCollection[0]);
         skillsCollection[0].classList.add("animated", "bounceInLeft");
         skillsCollection[1].classList.add("animated", "bounceInLeft");
