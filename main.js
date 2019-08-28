@@ -13,4 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
     barsCollection[1].classList.toggle("fadeout");
     barsCollection[2].classList.toggle("rotate-up");
   };
+
+  let skillsCollection = document.getElementsByClassName("skill");
+  skillsCollection[0].classList.add("animated");
+  skillsCollection[1].classList.add("animated");
+  skillsCollection[2].classList.add("animated");
 });
