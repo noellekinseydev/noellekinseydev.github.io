@@ -28,16 +28,22 @@ document.addEventListener("DOMContentLoaded", function() {
       window.addEventListener("resize", init);
     }
     function checkPosition() {
+      let animation = "";
       var positionFromTop = skillsCollection[0].getBoundingClientRect().top;
-      if (positionFromTop - windowHeight + 150 <= 0) {
-        console.log(skillsCollection[0]);
-        skillsCollection[0].classList.add("animated", "bounceInLeft");
-        skillsCollection[1].classList.add("animated", "bounceInLeft");
-        skillsCollection[2].classList.add("animated", "bounceInLeft");
+      if (window.matchMedia("(min-width: 600px)").matches) {
+        animation = "zoomIn";
       } else {
-        skillsCollection[0].classList.remove("animated", "bounceInLeft");
-        skillsCollection[1].classList.remove("animated", "bounceInLeft");
-        skillsCollection[2].classList.remove("animated", "bounceInLeft");
+        animation = "bounceInLeft";
+      }
+
+      if (positionFromTop - windowHeight + 150 <= 0) {
+        skillsCollection[0].classList.add("animated", animation);
+        skillsCollection[1].classList.add("animated", animation);
+        skillsCollection[2].classList.add("animated", animation);
+      } else {
+        skillsCollection[0].classList.remove("animated", animation);
+        skillsCollection[1].classList.remove("animated", animation);
+        skillsCollection[2].classList.remove("animated", animation);
       }
     }
     return {
