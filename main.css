@@ -10,6 +10,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 header {
   grid-column: 1/-1;
   vertical-align: middle;
@@ -70,24 +72,22 @@ ul {
   justify-self: flex-end;
   border: none;
   background: white;
+  z-index: 99;
+  background: transparent;
 }
 
 .burger-line {
   background: grey;
-  width: 50px;
-  height: 7px;
+  width: 45px;
+  height: 6px;
   margin-top: 6px;
   margin-bottom: 5px;
-  border-radius: 5px;
   background: linear-gradient(45deg, #00bcdd 10%, #f0f 120%);
-
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-#main-nav {
-  display: none;
-}
+
 
 /***********************
 *** BURGER ANIMATION ***
@@ -116,6 +116,21 @@ ul {
   position: absolute;
   opacity: 0.5;
 }
+
+.nav-open {
+  height: 100vh;
+  background: linear-gradient(45deg, #7200dd 10%, rgb(252, 232, 255) 120%);
+  margin: 0;
+  width: 100vw;
+  display: block!important;
+  position: absolute;
+  z-index: 98;
+}
+
+#main-nav {
+  display: none;
+}
+
 
 /*******************
 *** GHOST BUTTON ***

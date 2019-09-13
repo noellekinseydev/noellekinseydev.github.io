@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     barsCollection[0].classList.toggle("rotate-down");
     barsCollection[1].classList.toggle("fadeout");
     barsCollection[2].classList.toggle("rotate-up");
+
+    mainNav.classList.toggle("nav-open");
   };
 
   var animateHTML = function() {
