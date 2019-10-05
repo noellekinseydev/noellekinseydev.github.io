@@ -1,52 +1,41 @@
-/****************
-*** UNIVERSAL ***
-****************/
 body {
   margin: 0;
   padding: 0;
-  color: #444444;
-  overflow-x: hidden;
   font-family: "Inconsolata", monospace;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
 }
 
 header {
   display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  align-items: center;
   height: 60px;
-  vertical-align: middle;
-  background: white;
   border-bottom: 3px #00bcdd solid;
   border-image: linear-gradient(45deg, #00bcdd 0%, #ff00ff 53%);
   border-image-slice: 0 0 1 0;
   box-shadow: 0 4px 2px -2px rgb(185, 185, 185);
-  width: auto;
-  max-width: 100%;
-  overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(100, 41, 179);
+footer {
+  background: black;
 }
 
-a:hover {
-  font-weight: bold;
+.gc1 {
+  grid-column: 1/-1;
+}
+.gc2 {
+  grid-column: 2;
 }
 
-.active {
-  font-weight: 700;
-  font-size: 110%;
-  letter-spacing: 3px;
-  text-shadow: 1px 1px 1px rgba(182, 50, 187, 0.651);
-  background: -webkit-linear-gradient(#f0f, #00bccd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.tc {
+  text-align: center;
 }
-ul {
-  padding: 0;
-  margin: 0;
+
+#hero-img {
+  max-width: 150px;
+  align-self: center;
 }
 
 /******************
@@ -72,166 +61,4 @@ ul {
 
 .bl-fade {
   background: linear-gradient(45deg, #00bcdd 0%, #f0f 89%);
-}
-
-#main-nav {
-  display: none;
-}
-
-/***********************
-*** BURGER ANIMATION ***
-***********************/
-.rotate-down {
-  -webkit-transform: rotate(-40deg);
-  transform: translateY(12px) rotate(135deg);
-}
-
-/* Fade out the second bar */
-.fadeout {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.rotate-up {
-  -webkit-transform: rotate(40deg);
-  transform: translateY(-12px) rotate(-135deg);
-}
-
-/******************
-*** OPEN HEADER ***
-*******************/
-.header-open {
-  border-bottom: none;
-  box-shadow: none;
-  height: 100vh;
-}
-
-/***************
-*** OPEN NAV ***
-****************/
-.main-nav-open {
-  display: initial !important;
-  font-size: 20px;
-  position: absolute;
-  bottom: 50%;
-}
-
-.main-nav-open ul {
-  list-style: none;
-  text-align: center;
-}
-
-.main-nav-open li {
-  padding: 10px;
-}
-
-/*******************
-*** GHOST BUTTON ***
-*******************/
-.ghost-button {
-  background-color: #fff;
-  color: #101832;
-  cursor: pointer;
-  letter-spacing: 0.075em;
-  padding: 0.8em 1em;
-  font-family: "Inconsolata", monospace;
-  font-size: 16px;
-  font-weight: 600;
-  margin: 10px 0 20px 0;
-  align-self: center;
-  text-transform: uppercase;
-  border: 3px #00bcdd solid;
-  border-image: linear-gradient(45deg, #00bcdd 0%, #f0f 100%);
-  border-image-slice: 1 1 1 1;
-  box-shadow: -3px 4px 2px -2px rgb(141, 141, 141);
-  transform-origin: left bottom;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-}
-
-.ghost-button:hover,
-.ghost-button:focus {
-  background-size: 90%;
-  transform: translate(0.5em, -0.5em);
-  box-shadow: -1em 1em 0.15em rgba(55, 23, 97, 0.185);
-  font-weight: bold;
-}
-
-/********************
-*** INTRO SECTION ***
-********************/
-#intro {
-  text-align: center;
-  padding: 20px 0;
-  font-family: "Inconsolata", monospace;
-  height: calc(100vh - 100px);
-}
-
-#hero-img {
-  max-width: 150px;
-  align-self: center;
-}
-
-#intro-links {
-  z-index: -1;
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 80px;
-  align-self: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100vw;
-}
-
-#introduction {
-  text-align: left;
-  margin: 0 45px;
-}
-
-#introduction > * {
-  padding: 0;
-  margin: 0;
-}
-
-#introduction h1 {
-  font-size: 35px;
-  margin: 5px 0;
-}
-
-#introduction p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  line-height: 1.4;
-}
-
-#introduction h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-
-.intro-title {
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-shadow: 1px 1px 1px rgba(102, 50, 187, 0.651);
-  background: -webkit-linear-gradient(#00bccd, #f0f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#intro a {
-  color: #444444;
-  letter-spacing: 0px;
-}
-
-.abt-link {
-  color: rgb(214, 0, 214);
-}
-
-.abt-link:hover {
-  font-size: 110%;
-  text-decoration: underline;
 }
