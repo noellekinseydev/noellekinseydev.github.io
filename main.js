@@ -5,16 +5,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
   burgerMenu.onclick = function(bars) {
     let mainNav = document.getElementById("main-nav");
+    let header = document.getElementById("main-header");
 
     burgerMenu.classList.toggle("menu-open");
+    header.classList.toggle("header-open");
+    mainNav.classList.toggle("main-nav-open");
 
     let barsCollection = document.getElementsByClassName("burger-line");
     barsCollection[0].classList.toggle("rotate-down");
     barsCollection[1].classList.toggle("fadeout");
     barsCollection[2].classList.toggle("rotate-up");
   };
+});
 
-  var animateHTML = function() {
+/**
+ * 
+ *   var animateHTML = function() {
     let skillsCollection = document.getElementsByClassName("skill");
     var elems;
     var windowHeight;
@@ -51,4 +57,4 @@ document.addEventListener("DOMContentLoaded", function() {
     };
   };
   animateHTML().init();
-});
+ */
