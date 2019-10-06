@@ -176,6 +176,29 @@ footer {
   background: linear-gradient(45deg, #00bcdd 0%, #f0f 89%);
 }
 
+/*********************
+*** MENU ANIMATION ***
+*********************/
+.rotate-down {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-40deg);
+  transform: translateY(12px) rotate(135deg);
+}
+
+/* Fade out the second bar */
+.fadeout {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.rotate-up {
+  -webkit-transform: rotate(45deg) translate(-10px, -10px);
+  transform: rotate(45deg) translate(-10px, -10px);
+  -webkit-transform: rotate(40deg);
+  transform: translateY(-12px) rotate(-135deg);
+}
+
 /*******************
 *** GHOST BUTTON ***
 *******************/
