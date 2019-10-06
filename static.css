@@ -23,13 +23,18 @@ header {
   background: white;
 }
 
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
 /******************
 *** BURGER MENU ***
 ******************/
 #main-nav-menu {
   align-self: center;
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 20px;
   border: none;
   background: white;
 }
