@@ -1,9 +1,3 @@
-
-
-footer {
-  background: black;
-}
-
 /*********************
 *** CUSTOM CLASSES ***
 *********************/
@@ -119,7 +113,7 @@ footer {
 #skills a {
   font-size: 14px;
   text-decoration: none;
-  color: rgb(148, 5, 167);
+  color: rgb(153, 0, 255);
 }
 
 #skills a:hover {
