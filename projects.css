@@ -29,28 +29,56 @@ h1 {
 #projects-container {
   padding-top: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  grid-template-columns: 1fr;
   row-gap: 20px;
 }
 
-
+.blurb {
+  padding: 5px 0 0 0;
+}
 
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 30vh;
   border: 2px #00bcdd solid;
   border-image: linear-gradient(45deg, #00bcdd 0%, #f0f 100%);
   border-image-slice: 1 1 1 1;
-  text-align: center;
+  text-align: left;
+  padding: 0 20px 15px 20px;
 }
 
+.project img {
+  width: 100px;
+  margin-bottom: 5px;
+  align-self: center;
+  padding-bottom: 10px;
+}
 .project a {
   font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
-  text-shadow: 1px 1px 1px rgba(102, 50, 187, 0.651);
 }
+
+.small-link {
+  font-size: 12px!important;
+  font-weight: normal!important;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 2px;
+  color: #f0f;
+}
+
+.project a:hover {
+  color: #069ff7;
+}
+
+.small-link a:hover {
+  color: #069ff7;
+}
+
 .project p {
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
@@ -61,7 +89,7 @@ h1 {
 
 @media only screen and (min-width: 500px) {
   #projects-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
   }
@@ -69,7 +97,7 @@ h1 {
 
 @media only screen and (min-width: 700px) {
   #projects-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
   }
