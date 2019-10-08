@@ -198,9 +198,16 @@
   margin: 10px 0;
 }
 #about article {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 50px;
   border: 3px #00bcdd solid;
   border-image: linear-gradient(45deg, #f0f 0%, #00bcdd 100%);
   border-image-slice: 1 1 1 1;
+}
+
+#about i {
+  margin: auto;
 }
 
 #about a {
@@ -257,6 +264,10 @@
 
   #hero-img {
     max-width: 250px;
+  }
+
+  #skills-container {
+    padding: 10vh 10px;
   }
 
   #skills {

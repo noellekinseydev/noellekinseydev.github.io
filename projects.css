@@ -40,7 +40,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 30vh;
+  height: auto;
   border: 2px #00bcdd solid;
   border-image: linear-gradient(45deg, #00bcdd 0%, #f0f 100%);
   border-image-slice: 1 1 1 1;
