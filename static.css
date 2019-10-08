@@ -35,6 +35,18 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 
+.small-link {
+  font-size: 12px!important;
+  font-weight: normal!important;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 2px;
+  color: #f0f;
+}
+
+.purple {
+  color: rgb(153, 0, 255);
+}
+
 /******************
 *** BURGER MENU ***
 ******************/
