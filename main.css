@@ -120,7 +120,6 @@
   font-size: 0.75em;
 }
 
-
 #skills a {
   font-size: 14px;
   padding-top: 30px;
@@ -142,8 +141,8 @@
   padding: 30px 30px 50px 30px;
 }
 
-
-#process h2, h3 {
+#process h2,
+h3 {
   font-family: "Inconsolata", monospace;
   margin: 0;
 }
@@ -157,7 +156,7 @@
 }
 
 #process p {
-  font-size: .65em;
+  font-size: 0.65em;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -170,17 +169,15 @@
   grid-template-columns: 1fr 1fr;
   width: 100%;
   grid-column-gap: 20px;
-
 }
 
-
 #process a {
- color: white;
+  color: white;
 
   line-height: 2px;
   text-decoration: underline;
-    text-underline-position: under;
- 
+  text-underline-position: under;
+
   padding-top: 8px;
   font-size: 14px;
 }
@@ -189,25 +186,30 @@
   padding: 40px 0 10px 0;
 }
 
-#about {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 20px;
-}
+
 #about h1 {
   margin: 10px 0;
 }
-#about article {
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: 1fr 50px;
+
+.about-header {
+  display: flex;
+  padding: 0 10px;
+  grid-column: 1/-1;
   border: 3px #00bcdd solid;
   border-image: linear-gradient(45deg, #f0f 0%, #00bcdd 100%);
   border-image-slice: 1 1 1 1;
 }
 
-#about i {
-  margin: auto;
+.about-header h2 {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Inconsolata", monospace;
+}
+
+.about-header i {
+  padding-right: 5px;
+  margin-left: auto;
+  align-self: center;
 }
 
 #about a {
@@ -215,6 +217,25 @@
   padding-top: 15px;
   text-decoration: none;
   color: rgb(153, 0, 255);
+}
+
+#about article {
+  margin: 20px 0;
+}
+
+.about-toggle {
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 3px #00bcdd solid;
+  border-image: linear-gradient(45deg, #f0f 0%, #00bcdd 100%);
+  border-image-slice: 0 1 1 1;
+  margin-top: -5px;
+
+}
+
+.about-toggle p {
+  margin: 0;
+  padding: 10px 0;
 }
 
 @media only screen and (min-width: 500px) {
@@ -284,15 +305,15 @@
     display: flex;
   }
 
-
-  #process h2, h3 {
+  #process h2,
+  h3 {
     padding: 5px;
     font-size: 1.5em;
   }
 
   #process p {
     padding: 0 20px;
-    font-size: .75em;
+    font-size: 0.75em;
     width: 75%;
   }
 
