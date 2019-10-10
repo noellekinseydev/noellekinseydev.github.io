@@ -1,11 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
   let burgerMenu = document.getElementById("main-nav-menu");
-
+  let aboutDrops = document.getElementsByClassName("about-drop");
   console.log(burgerMenu);
+
+  let dropHandler = function() {
+    let aboutHeader = this.parentNode;
+    let aboutHeaderNext = aboutHeader.nextSibling;
+    let aboutToggle = aboutHeaderNext.nextSibling;
+
+    aboutToggle.classList.toggle("about-toggle-open");
+  };
+
+  Array.from(aboutDrops).forEach(function(drop) {
+    drop.addEventListener("click", dropHandler);
+  });
 
   burgerMenu.onclick = function(bars) {
     burgerMenu.classList.toggle("menu-open");
-
     let barsCollection = document.getElementsByClassName("burger-line");
     barsCollection[0].classList.toggle("rotate-down");
     barsCollection[1].classList.toggle("fadeout");

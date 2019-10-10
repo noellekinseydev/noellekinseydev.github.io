@@ -244,6 +244,11 @@ h3 {
   border-image: linear-gradient(45deg, #f0f 0%, #00bcdd 100%);
   border-image-slice: 0 1 1 1;
   margin-top: -5px;
+  display: none;
+}
+
+.about-toggle-open {
+  display: block;
 }
 
 .about-toggle p {
