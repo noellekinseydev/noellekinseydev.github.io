@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let dropHandler = function() {
     let temp = this.nextSibling;
     temp.nextSibling.classList.toggle("about-toggle-open");
+    temp.nextSibling.classList.add("animated", "fadeIn");
   };
 
   Array.from(aboutDrops).forEach(function(drop) {
