@@ -2,14 +2,11 @@ document.addEventListener("DOMContentLoaded", function() {
   let burgerMenu = document.getElementById("main-nav-menu");
   let header = document.getElementById("main-header");
   let nav = document.getElementById("main-nav");
-  let aboutDrops = document.getElementsByClassName("about-drop");
+  let aboutDrops = document.getElementsByClassName("about-header");
 
   let dropHandler = function() {
-    let aboutHeader = this.parentNode;
-    let aboutHeaderNext = aboutHeader.nextSibling;
-    let aboutToggle = aboutHeaderNext.nextSibling;
-
-    aboutToggle.classList.toggle("about-toggle-open");
+    let temp = this.nextSibling;
+    temp.nextSibling.classList.toggle("about-toggle-open");
   };
 
   Array.from(aboutDrops).forEach(function(drop) {
