@@ -292,6 +292,8 @@ h3 {
     align-self: flex-end;
     padding: 0;
   }
+
+
 }
 
 @media only screen and (min-width: 770px) {
@@ -341,16 +343,23 @@ h3 {
   #about {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 5vw;
     grid-column-gap: 15px;
   }
 
-  #about article {
-    height: 31vh;
+  #about-container {
+    padding: 5vmin 0 10vmin 0;
   }
 
+  #about article {
+    height: 32vh;
+  }
+
+  .about-header h2 {
+    font-size: 15px;
+  }
   .about-toggle {
-    height: calc(100% - 50px);
+    display: block;
+    height: 100%;
   }
 }
 
