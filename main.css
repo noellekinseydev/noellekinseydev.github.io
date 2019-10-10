@@ -292,8 +292,6 @@ h3 {
     align-self: flex-end;
     padding: 0;
   }
-
-
 }
 
 @media only screen and (min-width: 770px) {
@@ -374,6 +372,14 @@ h3 {
 
   #intro h1,
   #intro h2 {
-    font-size: 3em !important;
+    font-size: 2.5em !important;
+  }
+
+  #skills h2 {
+    font-size: 1.25rem;
+  }
+
+  #skills p {
+    font-size: .85rem;
   }
 }
