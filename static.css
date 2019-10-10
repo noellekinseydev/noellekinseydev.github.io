@@ -46,6 +46,11 @@ h2 {
   color: rgb(153, 0, 255);
 }
 
+#main-nav {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 /******************
 *** BURGER MENU ***
 ******************/
@@ -56,6 +61,7 @@ h2 {
   position: absolute;
   top: 10px;
   right: 0;
+  z-index: 2;
 }
 
 .burger-line {

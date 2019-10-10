@@ -9,7 +9,7 @@ nav {
 
 header {
   flex-direction: column;
-    justify-content: center;
+  justify-content: center;
 }
 
 /*********************
@@ -68,7 +68,7 @@ header {
 }
 
 .nav-open {
-  display: block;
+  display: flex;
 }
 
 .btm-grad-border {
@@ -271,6 +271,29 @@ h3 {
 .about-toggle p {
   margin: 0;
   padding: 10px 0;
+}
+
+#main-nav {
+  height: 80vh;
+  padding-top: 20vh;
+  border-bottom: 3px #00bcdd solid;
+}
+
+#nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0 10vw;
+}
+
+#nav-links li {
+  padding: 10px 0;
+}
+
+#nav-social {
+  align-self: flex-end;
+  margin-left: auto;
+  margin-top: auto;
+  padding: 20px 26px;
 }
 
 @media only screen and (min-width: 500px) {
