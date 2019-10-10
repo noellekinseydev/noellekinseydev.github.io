@@ -10,6 +10,7 @@ nav {
 header {
   flex-direction: column;
   justify-content: center;
+  background: white;
 }
 
 /*********************
@@ -265,6 +266,7 @@ h3 {
   border-image-slice: 0 1 1 1;
   margin-top: -5px;
   display: none;
+  z-index: 0;
 }
 
 .about-toggle-open {
