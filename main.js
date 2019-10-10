@@ -21,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function() {
     barsCollection[1].classList.toggle("fadeout");
     barsCollection[2].classList.toggle("rotate-up");
 
-    header.classList.toggle("header-open");
     nav.classList.add("animated", "slideInDown");
+    header.classList.add("animated", "slideInDown");
+
     nav.classList.toggle("nav-open");
+    header.classList.toggle("header-open");
   };
 });
 

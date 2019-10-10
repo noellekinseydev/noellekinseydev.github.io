@@ -65,6 +65,9 @@ header {
 
 .header-open {
   height: min-content;
+  border: none;
+  background: transparent;
+  box-shadow: none;
 }
 
 .nav-open {
@@ -276,6 +279,7 @@ h3 {
 #main-nav {
   height: 70vh;
   padding-top: 20vh;
+  background: white;
   border-bottom: 3px #00bcdd solid;
 }
 
