@@ -22,6 +22,7 @@ header {
   position: fixed;
   width: 100vw;
   background: white;
+  z-index: 1;
 }
 
 footer {
