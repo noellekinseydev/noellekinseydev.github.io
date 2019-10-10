@@ -1,7 +1,11 @@
+a {
+  text-decoration: none;
+  color: rgb(153, 0, 255);
+}
+
 /*********************
 *** CUSTOM CLASSES ***
 *********************/
-
 .gc1 {
   grid-column: 1/-1;
 }
@@ -12,6 +16,49 @@
 
 .tc {
   text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.sm-text {
+  font-size: 0.85rem;
+}
+
+.md-text {
+  font-size: 1rem;
+}
+
+.lg-text {
+  font-size: 1.4rem;
+}
+
+.lgr-text {
+  font-size: 1.6rem;
+}
+
+.lgst-text {
+  font-size: 1.75rem;
+}
+
+.no-mg {
+  margin: 0;
+}
+
+.tb10-mg {
+  margin: 10px 0;
+}
+
+.tb15-mg {
+  margin: 15px 0;
+}
+
+.btm-grad-border {
+  border-bottom: 2px #00bcdd solid;
+  border-image: linear-gradient(45deg, #00bcdd 0%, #ff00ff 53%);
+  border-image-slice: 0 0 1 0;
+  box-shadow: 0 4px 2px -2px rgb(185, 185, 185);
 }
 
 .intro-title {
@@ -26,105 +73,72 @@
 /************
 *** BY ID ***
 ************/
-#intro-container {
-  grid-column: 1/-1;
-  display: grid;
-  padding-bottom: 20px;
-  grid-template-columns: 30px 1fr 30px;
-  border-bottom: 2px #00bcdd solid;
-  border-image: linear-gradient(45deg, #00bcdd 0%, #ff00ff 53%);
-  border-image-slice: 0 0 1 0;
-  box-shadow: 0 4px 2px -2px rgb(185, 185, 185);
-}
-
-#introduction {
-  text-align: left;
-}
-
 #intro {
-  grid-column: 2/-2;
-  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+}
+
+#intro-container,
+#skills-container {
+  padding: 8vmin 0;
 }
 
 #hero-img {
   max-width: 150px;
-  align-self: center;
-}
-
-#introduction {
-  padding: 10px 0 15px 0;
-}
-
-#introduction h1,
-#introduction h2 {
-  font-size: 1.25em;
-  margin: 10px 0;
-}
-
-#introduction p {
-  margin: 25px 0;
-  font-size: 0.8em;
 }
 
 #intro-links {
   display: flex;
   flex-direction: column;
-}
-
-#intro-links a {
-  font-size: 0.7em;
-  text-decoration: none;
-  color: rgb(153, 0, 255);
+  padding: 5vmin 0;
 }
 
 #intro-links a:hover {
-  font-size: 0.75em;
+  letter-spacing: 1px;
   color: #f0f;
-  text-shadow: -1px 2px 2px rgb(229, 190, 255);
 }
 
-#skills-container {
-  padding: 30px 0;
-}
-#skills-container h1 {
-  margin: 0;
-}
-
-#skills {
-  text-align: left;
-}
-
+/*******************************
+*** SKILLS/WHAT I DO SECTION ***
+*******************************/
 #skills article {
   display: flex;
   flex-direction: column;
+
+  margin: 20px 0;
+  padding: 20px 20px;
+
   border: 3px #00bcdd solid;
   border-image: linear-gradient(45deg, #f0f 0%, #00bcdd 100%);
   border-image-slice: 1 1 1 1;
-  margin: 20px 0;
-  padding: 20px 20px;
-  min-height: 150px;
   box-shadow: 0 1px 2px 2px rgb(185, 185, 185);
 }
 
+#skills i {
+  color: rgb(153, 0, 255);
+  font-size: 20px;
+  padding: 0 0 15px 0;
+}
+
 #skills h2 {
+  font-size: 1rem;
   margin: 0;
-  padding-top: 10px;
-  font-size: 1em;
-  margin-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 #skills p {
+  flex-grow: 1;
+  font-size: 0.75rem;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  font-size: 0.75em;
+}
+
+.fa-chevron-right {
+  font-size: 14px !important;
+  padding: 20px 0 0 0 !important;
 }
 
 #skills a {
-  font-size: 14px;
-  padding-top: 30px;
-  text-decoration: none;
-  color: rgb(153, 0, 255);
+  font-size: 0.8rem;
 }
 
 #skills a:hover {
@@ -186,9 +200,9 @@ h3 {
   padding: 40px 0 10px 0;
 }
 
-
 #about h1 {
-  margin: 10px 0;
+  margin: 5px 0;
+  padding-bottom: 15px;
 }
 
 .about-header {
@@ -201,8 +215,8 @@ h3 {
 }
 
 .about-header h2 {
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 16px;
+  font-weight: 600;
   font-family: "Inconsolata", monospace;
 }
 
@@ -220,7 +234,7 @@ h3 {
 }
 
 #about article {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .about-toggle {
@@ -230,7 +244,6 @@ h3 {
   border-image: linear-gradient(45deg, #f0f 0%, #00bcdd 100%);
   border-image-slice: 0 1 1 1;
   margin-top: -5px;
-
 }
 
 .about-toggle p {
@@ -240,57 +253,55 @@ h3 {
 
 @media only screen and (min-width: 500px) {
   #intro {
+    column-gap: 5vmin;
+  }
+
+  #intro-container {
+    padding: 8vmin 0 10vmin 0;
+    grid-column: 2;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 250px 1fr;
     row-gap: 20px;
-    column-gap: 50px;
+    column-gap: 5px;
   }
 
   #hero-img {
     grid-column: 2;
+    grid-row: 1;
     max-width: 200px;
-    margin: auto;
+    margin: 0 auto;
+    align-self: flex-end;
   }
 
   #introduction {
     grid-column: 1;
     grid-row: 1/-1;
-    align-self: center;
+    align-self: flex-end;
   }
 
   #intro-links {
     justify-content: center;
-    grid-column: 1/-1;
-    margin: auto;
+    grid-column: 2;
     grid-row: 2;
+    align-self: flex-end;
+    padding: 0;
   }
 }
 
 @media only screen and (min-width: 770px) {
-  #intro-container {
-    padding: 50px 0;
-    grid-template-columns: 5vw 1fr 5vw;
+  #intro {
+    column-gap: 8vmin;
   }
 
-  #introduction h1,
-  #introduction h2 {
-    font-size: 1.75em;
+  #intro h1,
+  #intro h2 {
+    font-size: 2em !important;
   }
 
-  #introduction p,
-  .ghost-button {
-    font-size: 0.9em;
+  #intro p {
+    font-size: 1.2em !important;
   }
-
-  #hero-img {
-    max-width: 250px;
-  }
-
-  #skills-container {
-    padding: 10vh 10px;
-  }
-
   #skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -321,33 +332,25 @@ h3 {
     margin: 0;
     padding: 10vh 0 5vh 0;
   }
+
+  #about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+  }
 }
 
 @media only screen and (min-width: 975px) {
-  #intro-container {
-    grid-template-columns: 10vw 1fr 10vw;
-  }
-
   #intro {
-    column-gap: 8vw;
+    column-gap: 10vw;
   }
 
-  #introduction h1,
-  #introduction h2 {
-    font-size: 2.5em;
-  }
-
-  .ghost-button {
-    font-size: 1em;
-  }
-
-  #hero-img {
-    max-width: 275px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
   #intro-container {
-    grid-template-columns: 15vw 1fr 15vw;
+    column-gap: 2vw;
+  }
+
+  #intro h1,
+  #intro h2 {
+    font-size: 3em !important;
   }
 }
