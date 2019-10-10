@@ -64,7 +64,7 @@ header {
 }
 
 .header-open {
-  height: 100vh;
+  height: min-content;
 }
 
 .nav-open {
@@ -274,7 +274,7 @@ h3 {
 }
 
 #main-nav {
-  height: 80vh;
+  height: 70vh;
   padding-top: 20vh;
   border-bottom: 3px #00bcdd solid;
 }
