@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
   let burgerMenu = document.getElementById("main-nav-menu");
+  let header = document.getElementById("main-header");
+  let nav = document.getElementById("main-nav");
   let aboutDrops = document.getElementsByClassName("about-drop");
-  console.log(burgerMenu);
 
   let dropHandler = function() {
     let aboutHeader = this.parentNode;
@@ -21,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
     barsCollection[0].classList.toggle("rotate-down");
     barsCollection[1].classList.toggle("fadeout");
     barsCollection[2].classList.toggle("rotate-up");
+
+    header.classList.toggle("header-open");
+    nav.classList.toggle("nav-open");
   };
 });
 

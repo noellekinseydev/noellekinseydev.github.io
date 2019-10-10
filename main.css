@@ -3,6 +3,15 @@ a {
   color: rgb(153, 0, 255);
 }
 
+nav {
+  display: none;
+}
+
+header {
+  flex-direction: column;
+    justify-content: center;
+}
+
 /*********************
 *** CUSTOM CLASSES ***
 *********************/
@@ -52,6 +61,14 @@ a {
 
 .tb15-mg {
   margin: 15px 0;
+}
+
+.header-open {
+  height: 100vh;
+}
+
+.nav-open {
+  display: block;
 }
 
 .btm-grad-border {
@@ -292,6 +309,10 @@ h3 {
     align-self: flex-end;
     padding: 0;
   }
+
+  #skills p {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (min-width: 770px) {
@@ -380,6 +401,6 @@ h3 {
   }
 
   #skills p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 }
