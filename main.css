@@ -336,7 +336,16 @@ h3 {
   #about {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5vw;
     grid-column-gap: 15px;
+  }
+
+  #about article {
+    height: 31vh;
+  }
+
+  .about-toggle {
+    height: calc(100% - 50px);
   }
 }
 
