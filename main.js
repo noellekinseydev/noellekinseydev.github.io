@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function() {
+  Vue.component("navbutton", {
+    template: `<button id="main-nav-menu" class="burger-menu">
+                  <div class="burger-line"></div>
+                  <div class="burger-line bl-fade"></div>
+                  <div class="burger-line"></div>
+                </button>`
+  });
+  var vm = new Vue({
+    el: "#main-header"
+  });
+
   let burgerMenu = document.getElementById("main-nav-menu");
   let header = document.getElementById("main-header");
   let nav = document.getElementById("main-nav");
   let aboutDrops = document.getElementsByClassName("about-header");
-
-  Vue.component("navbutton", {
-    template: `<div>
-                  <div class="burger-line"></div>
-                  <div class="burger-line bl-fade"></div>
-                  <div class="burger-line"></div>
-                </div>`
-  });
-  var vm = new Vue({
-    el: "#main-nav-menu"
-  });
 
   let dropHandler = function() {
     let temp = this.nextSibling;
