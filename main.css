@@ -1,86 +1,6 @@
-a {
-  text-decoration: none;
-  color: rgb(153, 0, 255);
-}
 
-nav {
-  display: none;
-}
 
-header {
-  flex-direction: column;
-  justify-content: center;
-  background: white;
-}
 
-/*********************
-*** CUSTOM CLASSES ***
-*********************/
-.gc1 {
-  grid-column: 1/-1;
-}
-
-.gc2 {
-  grid-column: 2;
-}
-
-.tc {
-  text-align: center;
-}
-
-.tl {
-  text-align: left;
-}
-
-.sm-text {
-  font-size: 0.85rem;
-}
-
-.md-text {
-  font-size: 1rem;
-}
-
-.lg-text {
-  font-size: 1.4rem;
-}
-
-.lgr-text {
-  font-size: 1.6rem;
-}
-
-.lgst-text {
-  font-size: 1.75rem;
-}
-
-.no-mg {
-  margin: 0;
-}
-
-.tb10-mg {
-  margin: 10px 0;
-}
-
-.tb15-mg {
-  margin: 15px 0;
-}
-
-.header-open {
-  height: min-content;
-  border: none;
-  background: transparent;
-  box-shadow: none;
-}
-
-.nav-open {
-  display: flex;
-}
-
-.btm-grad-border {
-  border-bottom: 2px #00bcdd solid;
-  border-image: linear-gradient(45deg, #00bcdd 0%, #ff00ff 53%);
-  border-image-slice: 0 0 1 0;
-  box-shadow: 0 4px 2px -2px rgb(185, 185, 185);
-}
 
 .intro-title {
   font-weight: 700;
@@ -278,29 +198,7 @@ h3 {
   padding: 10px 0;
 }
 
-#main-nav {
-  height: 70vh;
-  padding-top: 20vh;
-  background: white;
-  border-bottom: 3px #00bcdd solid;
-}
 
-#nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0 10vw;
-}
-
-#nav-links li {
-  padding: 10px 0;
-}
-
-#nav-social {
-  align-self: flex-end;
-  margin-left: auto;
-  margin-top: auto;
-  padding: 20px 26px;
-}
 
 @media only screen and (min-width: 500px) {
   #intro {
@@ -342,6 +240,11 @@ h3 {
   #skills p {
     font-size: 0.9rem;
   }
+
+  #process article {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 770px) {
@@ -365,10 +268,6 @@ h3 {
 
   #process {
     padding: 40px 5vw;
-  }
-
-  #process article {
-    display: flex;
   }
 
   #process h2,
