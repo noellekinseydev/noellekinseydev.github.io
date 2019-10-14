@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
+  Vue.component("mainheader", {
+    template: `<div id="in-header">
+                  <navbutton></navbutton>
+                  <nav id="main-nav" class="btm-grad-border">
+                    <navlist></navlist>
+                    <socialicons></socialicons>
+                  </nav>
+                </div>`
+  });
+
   Vue.component("navbutton", {
     template: `<button id="main-nav-menu" class="burger-menu">
                   <div class="burger-line"></div>
@@ -6,6 +16,30 @@ document.addEventListener("DOMContentLoaded", function() {
                   <div class="burger-line"></div>
                 </button>`
   });
+
+  Vue.component("navlist", {
+    template: `<ul id="nav-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="/projects.html">Projects</a></li>
+                  <li><a href="#about-container">About</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+                </ul>`
+  });
+
+  Vue.component("socialicons", {
+    template: `<div class="social-icons">
+                  <a href="https://github.com/noellekinseydev">
+                      <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/noellekinseydev/">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://dribbble.com/noellekinsey_dev">
+                      <i class="fab fa-dribbble"></i>
+                  </a>
+              </div>`
+  });
+
   var vm = new Vue({
     el: "#main-header"
   });
