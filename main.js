@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
   Vue.component("navlist", {
     template: `<ul id="nav-links">
                   <li><a href="#">Home</a></li>
-                  <li><a href="/projects.html">Projects</a></li>
-                  <li><a href="#about-container">About</a></li>
-                  <li><a href="/contact.html">Contact</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>`
   });
 
