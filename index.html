@@ -34,96 +34,59 @@
     </header>
 
     <main>
-      <section id="intro" class="gc1 btm-grad-border">
-        <div id="intro-container" class="gc2 tc md-text">
-          <img id="hero-img" src="noey.png" />
-          <article id="introduction" class="tl">
-            <i class="fas fa-quote-left fa-2x" aria-hidden="true"></i>
-            <h2 class="tb10-mg lgr-text">I'm Noelle:</h2>
-            <h1 class="tb10-mg lgst-text">
-              <span class="intro-title">WEB DEVELOPER</span>
-            </h1>
-            <p class="tb15-mg">
-              It's great to meet you! I work with people who have
-              <strong>ideas</strong>.
-            </p>
-
-            <p>
-              I craft engaging digital experiences with killer content,
-              delightful design, and optimized development.
-            </p>
-          </article>
-
-          <div id="intro-links">
-            <a class="ghost-button" href="#contact">Get in Touch</a>
-            <a class="sm-text purple-text" href="#about-container"
-              >...or read <span class="abt-link">about me</span></a
-            >
-          </div>
+      <!-------------------
+      --- INTRO SECTION ---
+      -------------------->
+      <div id="maincontent">
+        <div class="static">
+          <section id="intro">
+            <div id="intro-container" class="tc md-text">
+              <img id="hero-img" src="noey.png" />
+              <article id="introduction" class="tl">
+                <i class="fas fa-quote-left fa-2x" aria-hidden="true"></i>
+                <h2 class="tb10-mg lgr-text">I'm Noelle:</h2>
+                <h1 class="tb10-mg lgst-text">
+                  <span class="intro-title">FRONT-END WEB DEVELOPER</span>
+                </h1>
+                <p class="tb15-mg">
+                  It's great to meet you! I work with people who have
+                  <strong>ideas</strong>.
+                </p>
+                <div id="intro-links">
+                  <a class="ghost-button" href="#contact">Get in Touch</a>
+                  <a class="sm-text purple-text" href="#about-container"
+                    >...or read <span class="abt-link">about me</span></a
+                  >
+                </div>
+              </article>
+              <!-- <footer>
+                <h1>Get in touch //</h1>
+                <p>
+                  <a href="mailto:noellekinseydev@gmail.com">noellekinseydev@gmail.com</a>
+                </p>
+                <p>334.370.7182</p>
+                <div class="social-icons" id="footer-social">
+                  <a href="https://github.com/noellekinseydev"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://www.linkedin.com/in/noellekinseydev/"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+          
+                  <a href="https://dribbble.com/noellekinsey_dev"
+                    ><i class="fab fa-dribbble"></i
+                  ></a>
+                </div>
+              </footer> -->
+            </div>
+          </section>
         </div>
-      </section>
-
-      <section id="projects-container">
-        <div id="projects">
-          <div id="projects-header">
-            <h1>MY WORK</h1>
-          </div>
-
-          <div id="project-container">
+        <div class="scrollable">
+          <h2>My Work</h2>
+          <section id="scrolling-container">
             <div class="project">
-              <img src="cosmothoughts.jpg" />
-              <div style="padding: 0 20px 15px 20px;">
-                <a href="#">Cosmothoughts</a>
-                <p><strong>Wordpress.org/Bootstrap</strong></p>
-                <p class="blurb">
-                  This blog and online education center was created using the
-                  Wordpress.org bare bones Underscores theme and a design
-                  created wholly from scratch.
-                </p>
-                <a href="#" class="small-link"
-                  ><i class="fas fa-chevron-right"></i> demo coming soon</a
-                >
-              </div>
-            </div>
-
-            <div class="project">
-              <img src="qmt.jpg" />
-              <div style="padding: 0 20px 15px 20px;">
-                <a href="#">Queen Machete Tarot</a>
-                <p><strong>Bootstrap 4</strong></p>
-                <p class="blurb">
-                  This landing page and portfolio was designed in Figma in
-                  collaboration with Queen Machete Tarot. I brought it to life
-                  using Bootstrap 4.
-                </p>
-                <a href="#" class="small-link"
-                  ><i class="fas fa-chevron-right"></i> demo coming soon</a
-                >
-              </div>
-            </div>
-
-            <div class="project">
-              <img src="myreads.jpg" />
-              <div style="padding: 0 20px 15px 20px;">
-                <a href="#">MyReads</a>
-                <p><strong>ReactJS/Bootstrap</strong></p>
-                <p class="blurb">
-                  This React-based virtual bookshelf app allows you to track and
-                  categorize books that you want to read, are currently reading,
-                  and have already read.
-                </p>
-                <a
-                  target="_blank"
-                  href="https://noellekinseydev.github.io/my-reads/"
-                  class="small-link"
-                  ><i class="fas fa-chevron-right"></i> view demo</a
-                >
-              </div>
-            </div>
-
-            <div class="project">
-              <img src="matching.png" />
-              <div style="padding: 0 20px 15px 20px;">
+              <div class="project-img" style="background-image: url(matching.png);"></div>
+              <div class="project-info">
                 <a href="#">Memory Game</a>
                 <p><strong>HTML/CSS/JavaScript</strong></p>
                 <p class="blurb">
@@ -135,13 +98,14 @@
                   target="_blank"
                   href="https://noellekinseydev.github.io/FEND-2018/memory-game/"
                   class="small-link"
-                  ><i class="fas fa-chevron-right"></i> view demo</a
+                  ><i class="fas fa-chevron-right" aria-hidden="true"></i> view
+                  demo</a
                 >
               </div>
             </div>
             <div class="project">
-              <img src="reviews.jpg" />
-              <div style="padding: 0 20px 15px 20px;">
+              <div class="project-img" style="background-image: url(reviews.jpg);"></div>
+              <div class="project-info">
                 <a href="#">Reviews App</a>
                 <p><strong>CSS Grid/JavaScript</strong></p>
                 <p class="blurb">
@@ -153,14 +117,51 @@
                   target="_blank"
                   href="https://noellekinseydev.github.io/FEND-2018/restaurant-reviews-app/"
                   class="small-link"
-                  ><i class="fas fa-chevron-right"></i> view demo</a
+                  ><i class="fas fa-chevron-right" aria-hidden="true"></i> view
+                  demo</a
                 >
               </div>
             </div>
 
             <div class="project">
-              <img src="esoether.jpg" />
-              <div style="padding: 0 20px 15px 20px;">
+              <div class="project-img" style="background-image: url(myreads.jpg);"></div>
+              <div class="project-info">
+                <a href="#">MyReads</a>
+                <p><strong>ReactJS/Bootstrap</strong></p>
+                <p class="blurb">
+                  This React-based virtual bookshelf app allows you to track and
+                  categorize books that you want to read, are currently reading,
+                  and have already read.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://noellekinseydev.github.io/my-reads/"
+                  class="small-link"
+                  ><i class="fas fa-chevron-right" aria-hidden="true"></i> view
+                  demo</a
+                >
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-img" style="background-image: url(qmt.jpg);"></div>
+              <div class="project-info">
+                <a href="#">Queen Machete Tarot</a>
+                <p><strong>Bootstrap 4</strong></p>
+                <p class="blurb">
+                  This magical online portfolio was designed in Figma in
+                  collaboration with Queen Machete Tarot. I brought it to life
+                  using Bootstrap 4.
+                </p>
+                <a href="#" class="small-link"
+                  ><i class="fas fa-chevron-right" aria-hidden="true"></i> demo
+                  coming soon</a
+                >
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-img" style="background-image: url(esoether.jpg);"></div>
+              <div class="project-info">
                 <a href="#">Esoether</a>
                 <p><strong>Bootstrap 4</strong></p>
                 <p class="blurb">
@@ -168,204 +169,15 @@
                   collaboration with Queen Machete Tarot. I brought it to life
                   using Bootstrap 4.
                 </p>
-                <a href="#" class="small-link"
-                  ><i class="fas fa-chevron-right"></i> demo coming soon</a
-                >
+                <a href="#" class="small-link"><i class="fas fa-chevron-right" aria-hidden="true"></i> demo coming soon</a>
               </div>
             </div>
-          </div>
+            
+          </section>
         </div>
-      </section>
-
-      <section id="about-container">
-        <div id="about">
-          About
-        </div>
-      </section>
-      <!-- <section id="skills-container" class="gc2">
-        <div id="skills">
-          <h1 class="gc1 no-mg lg-text">What I do:</h1>
-          <article class="md-text">
-            <i class="fas fa-laptop-code"></i>
-            <h2>Design & Development</h2>
-            <p>
-              I unite form, design, and function to handcraft memorable,
-              responsive websites that are accessible from any device.
-            </p>
-
-            <a href="/projects.html"
-              ><i class="fas fa-chevron-right"></i> see projects</a
-            >
-          </article>
-          <article>
-            <i class="fas fa-pen-nib purple"></i>
-            <h2>Content & Copy</h2>
-            <p>
-              As a creative, I craft customer-driven blog posts, helpdesk
-              articles, email campaigns, social media posts, and web copy.
-            </p>
-            <a href="#"><i class="fas fa-chevron-right"></i> see projects</a>
-          </article>
-          <article>
-            <i class="fas fa-bullseye purple"></i>
-            <h2>Branding & Strategy</h2>
-            <p>
-              I dedicate time to understanding your brand & your goals to design
-              an adaptable identity system & strategic plan for your project.
-            </p>
-            <a href="#"><i class="fas fa-chevron-right"></i> see projects</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="gc1" id="process-container">
-        <div id="process" class="gc2">
-          <h1 class="gc1">How I Do Things:</h1>
-          <div id="process-grid" class="gc1">
-            <article>
-              <h2 class="blue">1 //</h2>
-              <h3 class="blue">Listen</h3>
-              <p>
-                We'll meet (face-to-face or online) to get clarity on who you
-                are, who needs to know, and why they should care. Your vision
-                and message function as my roadmap, and we'll get an idea of
-                what I can do for you - whether that's design, site development,
-                or web content.
-              </p>
-            </article>
-            <article>
-              <h2 class="pink">2 //</h2>
-              <h3 class="pink">Game Plan</h3>
-              <p>
-                I take everything I learned from our meeting and whip up a
-                strategic plan aligned with your goals, focusing on brand
-                consistency and meeting your project's requirements. I'll
-                introduce a few service options, and we'll hammer out a timeline
-                and compensation options together.
-              </p>
-            </article>
-            <article>
-              <h2 class="pink">3 //</h2>
-              <h3 class="pink">Magic</h3>
-              <p>
-                Once you approve the strategy, I go to work on your project,
-                crafting a product that'll separate you from the competition and
-                rock your socks right off. By telling your brand story
-                digitally, we'll communicate your value, both enchanting and
-                engaging your ideal audience.
-              </p>
-            </article>
-            <article>
-              <h2 class="blue">4 //</h2>
-              <h3 class="blue">Launch</h3>
-              <p>
-                After testing, I hand the project over to you for a final
-                check-through. Once everything passes your inspection, the
-                complete ownership of the product will be transferred to you.
-                With development package purchases, you even get a complimentary
-                training session to teach you how to manage your new site.
-              </p>
-            </article>
-
-            <a class="process-link gc1" href="/contact.html"
-              ><i class="fas fa-chevron-right"></i> Let's chat.</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="gc2" id="about-container">
-        <div id="about">
-          <h1 class="gc1 tc">My Stats:</h1>
-          <article>
-            <div class="about-header">
-              <h2>
-                📱 Total Techie.
-              </h2>
-              <i class="fas fa-chevron-down about-drop"></i>
-            </div>
-            <div class="about-toggle">
-              <p>
-                There's nothing I love more than solving the puzzle of why
-                something does or doesn't work.
-              </p>
-
-              <p>
-                From repairing hardware to resolving software issues on PCs,
-                cell phones, and consoles: I'm what you might call a
-                <strong>troubleshooting trailblazer.</strong>
-              </p>
-            </div>
-          </article>
-
-          <article>
-            <div class="about-header">
-              <h2>
-                🎨 Artist at Heart.
-              </h2>
-              <i class="fas fa-chevron-down about-drop"></i>
-            </div>
-            <div class="about-toggle">
-              <p>
-                From digital design to prose and poetry, I am forever a student
-                of art.
-              </p>
-              <p>
-                I believe that technology can serve as the ultimate platform for
-                artistic gifts and opens creative doors that were once
-                inaccessible.
-              </p>
-              <p>
-                I'm committed to filling the web with expression and
-                inspiration.
-              </p>
-            </div>
-          </article>
-
-          <article>
-            <div class="about-header">
-              <h2>
-                🌠 Galactic Guidance.
-              </h2>
-              <i class="fas fa-chevron-down about-drop"></i>
-            </div>
-            <div class="about-toggle">
-              <p>
-                My mission is to live with purpose and lead from my deep
-                personal truths to change the world.
-              </p>
-              <p>
-                I am convinced that we are all cosmically connected and
-                inherently inspired.
-              </p>
-              <p>
-                The night sky is my muse, and I spend my free time learning the
-                language of her planets.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section> -->
+      </div>
     </main>
 
-    <footer>
-      <h1>Get in touch //</h1>
-      <p>
-        <a href="mailto:noellekinseydev@gmail.com">noellekinseydev@gmail.com</a>
-      </p>
-      <p>334.370.7182</p>
-      <div class="social-icons" id="footer-social">
-        <a href="https://github.com/noellekinseydev"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/noellekinseydev/"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-
-        <a href="https://dribbble.com/noellekinsey_dev"
-          ><i class="fab fa-dribbble"></i
-        ></a>
-      </div>
-    </footer>
+    
   </body>
 </html>
