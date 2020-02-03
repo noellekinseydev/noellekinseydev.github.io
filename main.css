@@ -120,6 +120,11 @@
   height: 30px;
 }
 
+.small-link:hover {
+  color: #9900FF;
+  font-weight: bold!important;
+}
+
 @media screen and (min-width: 768px) {
   #maincontent {
     grid-column: 1/3;

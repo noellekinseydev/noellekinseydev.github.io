@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   Vue.component("navlist", {
     template: `<ul id="nav-links">
-                  <li><a href="#">Home</a></li>
+                  <li><a href="https://noellekinseydev.github.io/">Home</a></li>
                   <li><a href="#projects">Projects</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#contact">Contact</a></li>
@@ -73,44 +73,3 @@ document.addEventListener("DOMContentLoaded", function() {
     header.classList.toggle("header-open");
   };
 });
-
-/**
- * 
- *   var animateHTML = function() {
-    let skillsCollection = document.getElementsByClassName("skill");
-    var elems;
-    var windowHeight;
-    function init() {
-      windowHeight = window.innerHeight;
-      addEventHandlers();
-      checkPosition();
-    }
-    function addEventHandlers() {
-      window.addEventListener("scroll", checkPosition);
-      window.addEventListener("resize", init);
-    }
-    function checkPosition() {
-      let animation = "";
-      var positionFromTop = skillsCollection[0].getBoundingClientRect().top;
-      if (window.matchMedia("(min-width: 600px)").matches) {
-        animation = "zoomIn";
-      } else {
-        animation = "bounceInLeft";
-      }
-
-      if (positionFromTop - windowHeight + 150 <= 0) {
-        skillsCollection[0].classList.add("animated", animation);
-        skillsCollection[1].classList.add("animated", animation);
-        skillsCollection[2].classList.add("animated", animation);
-      } else {
-        skillsCollection[0].classList.remove("animated", animation);
-        skillsCollection[1].classList.remove("animated", animation);
-        skillsCollection[2].classList.remove("animated", animation);
-      }
-    }
-    return {
-      init: init
-    };
-  };
-  animateHTML().init();
- */

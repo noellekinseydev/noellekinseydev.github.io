@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+
+  #maincontent {
+    display: flex;
+  }
+
+  .static {
+    -ms-flex: 0 0 60.666667%;
+    flex: 0 0 60.666667%;
+    max-width: 60.666667%;
+    align-items: flex-start;
+  }
+
+  .scrollable {
+    -ms-flex: 0 0 40.333333%;
+    flex: 0 0 40.333333%;
+    max-width: 40.333333%;
+  }
+
+  .case-study {
+    margin-left: 20px;
+  }
+}
+
+.work-img {
+  width: 100%;
+}
