@@ -24,6 +24,18 @@ h1 {
   
 }
 
+.navbar {
+  background: transparent;
+  transition: background-color 1s ease 0s;
+}
+
+.bg-gradient {
+  background: #4e54c8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 .navbar-brand {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
@@ -107,11 +119,11 @@ hr {
 }
 
 #whatitmeans {
-  background: #00d2ff;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-
+  color: white;
+  background: #36d1dc;
+    background: -webkit-linear-gradient( to top, #5b69e5, #36c9dc );
+    background: linear-gradient( to top, #5b69e5, #36c9dc );}
+}
   #whatitmeans .row {
     color: white;
   }
@@ -124,6 +136,10 @@ hr {
 }
 
 #whatitmeans h3 {
+  font-size: 22px;
+}
+
+#whatitmeans h4 {
   margin-bottom: 10px;
 }
 
@@ -145,7 +161,7 @@ hr {
 .flip-card {
   background-color: transparent;
   width: 100%;
-  height: max-content;
+
 }
 
 /* This container is needed to position the front and back side */
@@ -172,11 +188,25 @@ hr {
   backface-visibility: hidden;
 }
 
-
+.flip-card {
+  min-height: 275px;
+}
 
 /* Style the back side */
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+.divbutton:hover {
+  opacity: 0.8!important;
+}
+
+.btn-warning {
+  background: rgb(127, 90, 229)!important;
+}
+
+.text-warning {
+  color: rgb(127, 90, 229)!important;
 }
 
 @media screen and (min-width: 568px) {
@@ -186,6 +216,16 @@ hr {
 
   #header-section .page-header .container {
     margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  .flip-card {
+    min-height: 350px;
+  }
+
+  #whatitmeans .container {
+    max-width: 90%;
   }
 }
 
@@ -226,5 +266,37 @@ hr {
 
   #countdown {
     font-size: 15px;
+  }
+
+  #app-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .flip-card {
+    min-height: 300px;
+  }
+
+  #whatitmeans h3 {
+    font-size: 20px;
+  }
+
+  .flip-card h4 {
+    font-size: 1.525em;
+  }
+
+  .flip-card p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  #app-section h1 {
+    font-size: 30px;
+  }
+
+  #app-section p, #app-section ul {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(209, 209, 209)
   }
 }
