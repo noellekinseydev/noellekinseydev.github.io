@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/img/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Now UI Kit by Creative Tim</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+
+    <!--     Fonts and icons     -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5a61301206.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!------------
+    --- HEADER ---
+    ------------->
+    <header id="header-section">
+      <nav
+        class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent"
+        id="navbar"
+        style="background-color: transparent !important"
+      >
+        <div class="container">
+          <div class="navbar-translate">
+            <a
+              class="navbar-brand"
+              onclick="scrollToElement('#header-section', 400);"
+              >Mercury R<span
+                style="font-size: 10px; position: absolute; top: 25px;"
+                >x</span
+              >
+              <span style="padding-left: 8px">2020</span></a
+            >
+            <button class="navbar-toggler" type="button" data-toggle="collapse">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar1"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="scrollToElement('#app-section', 600);"
+                  >Overview</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="scrollToElement('#product-preview-section', 600);"
+                  >What It Means</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="scrollToElement('#review-section', 600);"
+                  >The Specifics</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="scrollToElement('#mailchimp-section', 600);"
+                  >Your Forecast</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="scrollToElement('#footer-section', 600);"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="page-header clear-filter  wrapper d-flex align-items-center">
+        <div class="container">
+          <div class="content-center brand">
+            <img class="n-logo mt-5 heroimg" src="mercury.svg" alt="" />
+            <h1 class="h1-seo">2020 Mercury Retrograde <br />in Pisces</h1>
+            <h3>February 16 – March 9</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-wrapper">
+      <!---------------
+      --- COUNTDOWN ---
+      ---------------->
+      <section class="section section-basic" id="countdown">
+        <div class="container">
+          <div class="row">
+            <div class="col-8 d-flex">
+              <div class="d-flex justify-content-around w-100">
+                <div>
+                  <span class="days number"></span><br />
+                  <span>Days</span>
+                </div>
+                <div>
+                  <span class="hours number"></span><br />
+                  <span>Hours</span>
+                </div>
+                <div>
+                  <span class="minutes number"></span><br />
+                  <span>Minutes</span>
+                </div>
+                <div>
+                  <span class="seconds number"></span><br />
+                  <span>Seconds</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 d-flex align-items-center">
+              <h3 class="text-center mb-0" style="font-weight: 800;">
+                until Mercury Direct
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Countdown-->
+
+      <!--------------
+      --- CAROUSEL ---
+      --------------->
+      <section class="section section-basic" id="app-section">
+        <div class="app-container py-5">
+          <div id="app-carousel" class="carousel slide">
+            <div class="carousel-inner" role="listbox">
+              <!--What is Retrograde?-->
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center"
+                    >
+                      <img class="" src="rx.gif" alt="" />
+                    </div>
+                    <div class="col-sm-12 col-md-6 ">
+                      <h1 class="pt-5">What is Retrograde?</h1>
+                      <hr />
+                      <p class="pt-3">
+                        When a planet <em>appears</em> to be moving backwards,
+                        we say it is in "retrograde." The planet appears to be
+                        moving in reverse due to an optical illusion that occurs
+                        when one planet's orbit around the Sun outpaces another
+                        planet's.
+                      </p>
+                      <p>
+                        The difference in speeds causes the retrograde planet to
+                        appear to stop and then move backwards from the Earth
+                        for a period of time even though it is still moving
+                        forward.
+                      </p>
+                      <p>Astrologically speaking, retrogrades can bring:</p>
+                      <ul>
+                        <li>
+                          issues from the past we thought we had dealt with
+                        </li>
+                        <li>
+                          a pause in the house (area of life) the planet is
+                          transiting
+                        </li>
+                        <li>a review of the ideals the planet symbolizes</li>
+                        <li>
+                          an inability to harness the planet's energy the way
+                          normally would
+                        </li>
+                        <li>
+                          a feeling of everything going wrong or moving
+                          backwards
+                        </li>
+                        <li>
+                          an opportunity to take care of unfinished business
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--What is Mercury?-->
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        class="w-25"
+                        src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b2709.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <h1 class="pt-5">What is Mercury?</h1>
+                      <hr />
+                      <p class="pt-3">
+                        As the messenger of the gods, Mercury moves quickly. It
+                        is the fastest planet in the solar system and completes
+                        its orbit around the Sun in just 88 Earth days, spending
+                        between 14 and 30 days in each zodiac sign depending on
+                        the motion.
+                      </p>
+                      <p>
+                        In astrology, Mercury represents our mind and how we
+                        assign intellectual meaning to all that we experience.
+                        It is said to govern:
+                      </p>
+                      <ul>
+                        <li>Transportation & Electronics</li>
+                        <li>Communication & Exchange of Ideas</li>
+                        <li>Our Mental Faculties & Thought Processes</li>
+                        <li>Data & Analysis</li>
+                        <li>Organization & Synthesis</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--What is Mercury Retrograde?-->
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        class="w-25"
+                        src="https://i0.wp.com/freepngimages.com/wp-content/uploads/2016/05/planet-mercury-transparent-background.png?fit=680%2C680"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                      <h1 class="pt-5">What is Mercury Retrograde?</h1>
+                      <hr />
+                      <p class="pt-3">
+                        Because Mercury has a tighter orbit around the Sun than
+                        the Earth does, it zips past the Earth three or four
+                        times each year – causing what we call Mercury
+                        Retrograde or Mercury Rx.
+                      </p>
+                      <p>
+                        For most people, Mercury retrograde wreaks havoc on
+                        their electronics and travel plans. Disruptive issues
+                        surrounding communication are likely, and we can be
+                        confronted by
+                        <em><strong>ghosts of the past</strong></em> (including
+                        exes). Expect delays and lost items, and be extra
+                        careful when making major decisions or signing any
+                        contracts at this time as your mind may change once
+                        Mercury stations direct.
+                      </p>
+                      <p>
+                        Many people born under a Mercury retrograde or with a
+                        detrimental Mercury note that they experience the
+                        retrograde effects while Mercury is direct and the
+                        direct effects during the retrograde.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#app-carousel"
+              role="button"
+              data-slide="prev"
+              ><i class="now-ui-icons arrows-1_minimal-left"></i
+            ></a>
+            <a
+              class="carousel-control-next"
+              href="#app-carousel"
+              role="button"
+              data-slide="next"
+              ><i class="now-ui-icons arrows-1_minimal-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!--End Carousel-->
+
+      <!-------------------
+      --- WHAT IT MEANS ---
+      -------------------->
+      <section class="section-basic w-icons pt-4" id="whatitmeans">
+        <div class="container py-5 text-center">
+          <h2
+            class="title aos-init aos-animate pt-4"
+            data-aos="fade-down"
+            data-aos-offset="100"
+          >
+            This time Mercury is backtracking to review:
+          </h2>
+          <div class="row py-4">
+            <!--First FlipCard-->
+            <div
+              class="col col-sm-4 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="0"
+              data-aos-offset="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <!--Card Front-->
+                  <div class="flip-card-front">
+                    <div class="meaningicon">
+                      <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Emotions</h3>
+                    <p>
+                      We are looking into Pisces' endlessly deep oceans of
+                      feelings and empathy.
+                    </p>
+                  </div>
+                  <!--End Card Front-->
+                  <!--Card Back-->
+                  <div class="flip-card-back">
+                    <div class="meaningicon">
+                      <i class="fas fa-minus-circle"></i>
+                    </div>
+                    <h3>Boundaries</h3>
+                    <p>
+                      Pisces traditionally knows no bounds. Where is it that you
+                      have lost yourself?
+                    </p>
+                  </div>
+                  <!--End Card Back-->
+                </div>
+              </div>
+            </div>
+
+            <!--Second FlipCard-->
+            <div
+              class="col col-sm-4 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="0"
+              data-aos-offset="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <!--Card Front-->
+                  <div class="flip-card-front">
+                    <div class="meaningicon">
+                      <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Compassion</h3>
+                    <p>
+                      Where can we extend more kindness to ourselves and to others?
+                    </p>
+                  </div>
+                  <!--End Card Front-->
+                  <!--Card Back-->
+                  <div class="flip-card-back">
+                    <div class="meaningicon">
+                      <i class="fas fa-cross"></i>
+                    </div>
+                    <h3>Martyrdom</h3>
+                    <p>
+                      Remember that sacrifice is not necessarily the same thing
+                      as selflessness.
+                    </p>
+                  </div>
+                  <!--End Card Back-->
+                </div>
+              </div>
+            </div>
+
+            <!--Intuition-->
+            <div
+              class="col col-sm-4 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-offset="100"
+            >
+              <div class="meaningicon">
+                <i class="fas fa-crow"></i>
+              </div>
+              <h3>Intuition</h3>
+              <p>
+                Instincts, our sixth-sense, and spiritual messages are at the
+                forefront now.
+              </p>
+            </div>
+          </div>
+          <div class="row py-4">
+            <!--Creativity-->
+            <div
+              class="col col-sm-4 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-offset="100"
+            >
+              <div class="meaningicon">
+                <i class="fas fa-hat-wizard"></i>
+              </div>
+              <h3>Creativity</h3>
+              <p>Use your progress as motivation.</p>
+            </div>
+            <!--Faith-->
+            <div
+              class="col col-sm-4 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-offset="100"
+            >
+              <div class="meaningicon">
+                <i class="fas fa-bahai"></i>
+              </div>
+              <h3>Faith</h3>
+              <p>Use your progress as motivation.</p>
+            </div>
+            <!--Dreams-->
+            <div
+              class="col col-sm-4 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-offset="100"
+            >
+              <div class="meaningicon">
+                <i class="fas fa-cloud-moon"></i>
+              </div>
+              <h3>Dreams</h3>
+              <p>Use your progress as motivation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------
+      --- THE SPECIFICS ---
+      -------------------->
+      <section class="section section-basic">
+        <!-----------
+      --- MODALS ---
+      ------------->
+        <div class="section section-basic">
+          <!-- MERCURY IN PISCES MODAL -->
+          <div
+            class="modal fade"
+            id="piscesmercury"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="piscesMercuryModalTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                  <!--Modal Title-->
+                  <h5 class="modal-title" id="piscesMercuryModalTitle">
+                    Mercury in Pisces
+                  </h5>
+                  <!--Close Button-->
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <p class="ml-4">
+                  <span class="badge badge-info">Mutable Water</span>
+                </p>
+                <!--Body-->
+                <div class="modal-body">
+                  <!--Modal Body Title-->
+                  <h4></h4>
+                  <!--Modal Content-->
+                  <p>
+                    In Pisces, Mercury is in
+                    <span
+                      class="text-info"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="opposite the sign it rules"
+                      >detriment</span
+                    >. It is not able to operate as it normally does, so we
+                    experience a <em>watering down</em> of our thinking
+                    processes.
+                  </p>
+                  <p>
+                    Pisces is attuned the ethereal worlds of emotion,
+                    spirituality, and compassion – but its rose-colored glasses
+                    can cloud and obscure the facts.
+                  </p>
+                  <div class="keywords">
+                    <p class="mb-0">
+                      <em><strong>Positives:</strong> dreamy, </em>
+                    </p>
+                    <p>
+                      <em
+                        ><strong>Negatives:</strong> manipulative,
+                        victim-complex, naive,
+                      </em>
+                    </p>
+                  </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PISCES CHANDRA SYMBOL MODAL -->
+          <div
+            class="modal fade"
+            id="pisceschandra"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="piscesChandraModalTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="piscesChandraModalTitle">
+                    Pisces 12°53' Chandra Symbol
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <h4>
+                    <strong>Pisces 12°1' – 13°0'</strong><br /><em
+                      >A woman imprisoned in a high tower.</em
+                    >
+                  </h4>
+                  <p>
+                    Sentenced to limbo, you are suspended from active
+                    participation in evolving worlds. Hung high and dry and
+                    massively resigned, following out an ancient fate to the
+                    end. Having operated insensitively, now being unable to do
+                    anything to anybody. You live infinitely alone, dreaming and
+                    drugged. Deep down inside, remembering everything dimly and
+                    darkly. Self-circumscribed and very deprived. You live on
+                    memories and the ripples of mute desire to move on, someday.
+                    Destined to transform this dread fate when the cycle is
+                    complete, you are until that time, vacuum-pressed and
+                    emotionally grief stricken, nostalgic and raging, while not
+                    getting across and being muffled all-pervasively.
+                  </p>
+                  <p class="ml-4">
+                    <a
+                      href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#pisces13"
+                      target="
+                  _blank"
+                      >– "Inside Degrees" by Ellias Lonsdale</a
+                    >
+                  </p>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AQUARIUS CHANDRA SYMBOL MODAL -->
+          <div
+            class="modal fade"
+            id="aquariuschandra"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="aquariusChandraModalTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                  <!--Modal Title-->
+                  <h5 class="modal-title" id="aquariusChandraModalTitle">
+                    Aquarius 28°13' Chandra Symbol
+                  </h5>
+                  <!--Close Button-->
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                  <!--Modal Body Title-->
+                  <h4>
+                    <strong>Aquarius 28°1' – 29°0'</strong><br /><em
+                      >The sound of dripping water echoes through a great stone
+                      room.</em
+                    >
+                  </h4>
+                  <!--Modal Content-->
+                  <p>
+                    The most unusual and distinctive of inward conditions. You
+                    are held within a mode of awareness that is from another
+                    time and place altogether. You have nothing to say and
+                    nothing to do. There is no power of individual life-force.
+                    Instead you see as the ancient ones see. Utter unworldliness
+                    to a point of dissociation from surface experience. A part
+                    of the mind transported by a reverie of timeless, effortless
+                    realization. Everything is clear. The subtlest, most refined
+                    things are obvious. It is all a matter of perspective, and
+                    here the perspective is that the only thing that matters is
+                    how the inward resonant echo registers and where it leads
+                    you in choiceless awareness, in communion with the Gods.
+                  </p>
+                  <p class="ml-4">
+                    <a
+                      href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#pisces13"
+                      target="
+              _blank"
+                      >– "Inside Degrees" by Ellias Lonsdale</a
+                    >
+                  </p>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-----------
+      --- CARDS ---
+      ------------->
+        <div class="container text-center mt-5" id="features">
+          <h3 class="title mb-2">The Specifics</h3>
+          <h4 class="mt-0 mb-4 pb-4">Click the buttons to learn more!</h4>
+
+          <!--Features cards-->
+          <div class="row">
+            <!--STATION RX CARD-->
+            <div class="card col-sm-6 col-lg-3">
+              <div class="card-header">
+                <h4 class="card-title">
+                  Stations Retrograde 12°53' Pisces
+                </h4>
+              </div>
+              <div class="card-body pt-0">
+                <h6 class="text-info pb-2">
+                  February 16, 2020<br />4:53 pm PST
+                </h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <button
+                      type="button"
+                      class="btn btn-info"
+                      data-toggle="modal"
+                      data-target="#piscesmercury"
+                    >
+                      Mercury in Pisces
+                    </button>
+                  </li>
+                  <li class="list-group-item">
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn btn-info"
+                      data-toggle="modal"
+                      data-target="#pisceschandra"
+                    >
+                      Chandra Symbol
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--RX ASPECTS CARD-->
+            <div class="card col-sm-6 col-lg-3">
+              <div class="card-header">
+                <h4 class="card-title">
+                  Retrograde Station Aspects
+                </h4>
+              </div>
+              <div class="card-body pt-0">
+                <h6 class="text-secondary pb-2">
+                  February 16, 2020<br />4:53 pm PST
+                </h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <button class="btn btn-secondary">
+                      Moon square Mercury
+                    </button>
+                  </li>
+                  <li class="list-group-item">
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-toggle="modal"
+                      data-target="#pisceschandra"
+                    >
+                      Neptune conjunct Mercury
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--STATION DIRECT CARD-->
+            <div class="card  col-sm-6 col-lg-3">
+              <div class="card-header" role="tab" id="heading2">
+                <h4 class="card-title">
+                  Stations Direct<br />
+                  28°13' Aquarius
+                </h4>
+              </div>
+              <div class="card-body pt-0">
+                <h6 class="text-warning pb-2">
+                  March 9, 2020<br />8:41 pm PST
+                </h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <button class="btn btn-warning">Mercury in Aquarius</button>
+                  </li>
+                  <li class="list-group-item">
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn btn-warning"
+                      data-toggle="modal"
+                      data-target="#aquariuschandra"
+                    >
+                      Chandra Symbol
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!--DIRECT ASPECTS CARD-->
+            <div class="card col-sm-6 col-lg-3">
+              <div class="card-header">
+                <h4 class="card-title">Direct Station <br />Aspects</h4>
+              </div>
+              <div class="card-body pt-0">
+                <h6 class="text-secondary pb-2">
+                  March 9, 2020<br />8:41 pm PST
+                </h6>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <button class="btn btn-secondary">
+                      Moon inconjunct Mercury
+                    </button>
+                  </li>
+                  <li class="list-group-item">
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-toggle="modal"
+                      data-target="#pisceschandra"
+                    >
+                      Saturn semisextile Mercury
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <br />
+          <hr />
+
+          <!--Sign-up button-->
+          <p id="signup">
+            Sign up for our newsletter to get product release and other
+            information.
+          </p>
+          <button
+            class="btn btn-primary btn-round btn-lg"
+            type="button"
+            data-toggle="modal"
+            data-target="#emailForm"
+          >
+            <i class="now-ui-icons ui-1_email-85"></i> Sign Up!
+          </button>
+        </div>
+      </section>
+      <!--End Specifics-->
+    </main>
+
+    <!--   Core JS Files   -->
+    <script
+      src="../assets/js/core/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../assets/js/core/popper.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../assets/js/core/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="../assets/js/plugins/bootstrap-switch.js"></script>
+
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script
+      src="../assets/js/plugins/nouislider.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script
+      src="../assets/js/plugins/bootstrap-datepicker.js"
+      type="text/javascript"
+    ></script>
+
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+    <script
+      src="../assets/js/now-ui-kit.js?v=1.2.0"
+      type="text/javascript"
+    ></script>
+
+    <!--Moment.js-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>

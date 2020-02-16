@@ -1,0 +1,194 @@
+#maincontent {
+  grid-column: 1/3;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#hero-img {
+  width: 200px;
+}
+
+#intro-container a {
+  display: block;
+}
+
+#intro {
+  padding: 20px;
+  margin-left: 30px;
+}
+
+#intro-links {
+  text-align: center;
+}
+
+.ghost-button {
+  width: max-content;
+  margin: 20px auto;
+}
+
+.project-img {
+  height: 200px;
+  background-size: contain;
+  width: auto;
+}
+
+.project-info {
+  padding: 20px 0;
+}
+
+.project p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.blurb {
+  font-size: 15px;
+}
+
+.scrollable h2 {
+  grid-column: 1/3;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  background: #f1f1f1;
+}
+
+#scrolling-container {
+  margin-left: 30px;
+}
+
+.intro-title {
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 1px rgba(102, 50, 187, 0.651);
+  background: -webkit-linear-gradient(#00bccd, #f0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-form {
+  color: white;
+  padding: 20px 40px;
+  background: linear-gradient(45deg, #00bcddbd 0%, #ff00ff81 53%);
+  min-height: calc(100vh - 170px);
+}
+
+.contact-form form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form button {
+  border: 2px solid white;
+  background: none;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.637);
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #545454;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form label,
+.contact-form input {
+  margin-top: 10px;
+  height: 30px;
+}
+
+.small-link:hover {
+  color: #9900FF;
+  font-weight: bold!important;
+}
+
+@media screen and (min-width: 768px) {
+  #maincontent {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+  }
+
+  .scrollable h2 {
+    height: 30px;
+    padding: 20px 0;
+  }
+
+  .static {
+    order: 2;
+  }
+
+  .project {
+    display: grid;
+    margin: 30px 0;
+    grid-template-columns: 300px 1fr;
+  }
+
+  .project-img {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .project-info {
+    padding-top: 0;
+    padding-left: 20px;
+  }
+
+  .blurb {
+    font-size: 16px !important;
+  }
+
+  #scrolling-container {
+    margin-left: 0;
+    padding: 10px 30px;
+    height: calc(100vh - 150px);
+    overflow-y: scroll;
+  }
+
+  .static {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .project {
+    grid-template-columns: 200px 1fr;
+  }
+  .project-img {
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+  }
+
+  .blurb {
+    font-size: 14px !important;
+  }
+
+  .project-info {
+    padding: 0 20px 15px 20px;
+  }
+}
