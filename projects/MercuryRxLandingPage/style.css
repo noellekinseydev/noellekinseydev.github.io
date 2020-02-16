@@ -218,4 +218,13 @@ hr {
   .keywords p {
     font-size: 12px;
   }
+
+  #countdown .number {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  #countdown {
+    font-size: 15px;
+  }
 }
