@@ -209,6 +209,21 @@ hr {
   color: rgb(127, 90, 229)!important;
 }
 
+.bg-dark {
+  background: #030922!important;
+  color: rgb(204, 204, 204);
+}
+
+
+#specificssection a {
+  color: #6C72E0!important;
+}
+
+#forecast a {
+  color: rgb(187, 190, 255)!important;
+  font-weight: 400;
+}
+
 @media screen and (min-width: 568px) {
   .heroimg {
     width: 300px;
