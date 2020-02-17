@@ -158,10 +158,13 @@ hr {
 
   .sidebar-collapse .navbar-collapse:before {
     background: #722f94;
-    background: linear-gradient(#102e82,#722f94 80%);
+    background: linear-gradient(#102e82, #722f94 80%);
   }
 
-  .sidebar-collapse .navbar-collapse .navbar-nav:not(.navbar-logo) .nav-link:not(.btn) {
+  .sidebar-collapse
+    .navbar-collapse
+    .navbar-nav:not(.navbar-logo)
+    .nav-link:not(.btn) {
     font-size: 10px;
   }
 }
@@ -194,28 +197,6 @@ hr {
   padding: 30px;
   font-size: 30px;
 }
-
-.meaningicon-alt:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
-.meaningicon-alt a {
-  margin: 10px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 10px solid #3e6afcaf;
-  color: #6c5cff;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 100px;
-  padding: 30px;
-  font-size: 30px;
-  margin: 0 40px;
-}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -245,6 +226,12 @@ hr {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+}
+
+.xletter {
+  font-size: 10px;
+  position: absolute;
+  top: 15px;
 }
 
 .flip-card {
@@ -320,9 +307,12 @@ hr {
     text-align: center !important;
   }
 
-  .meaningicon-alt a {
-    margin: 0 10px;
+  .xletter {
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
   }
+
   .h1-seo {
     font-size: 35px;
   }

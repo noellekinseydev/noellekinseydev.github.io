@@ -22,11 +22,11 @@
 
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
+    <link href="assets/css/now-ui-kit.min.css" rel="stylesheet" />
 
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="sidebar-collapse">
     <!------------
     --- HEADER ---
     ------------->
@@ -34,22 +34,32 @@
       <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
           <div class="navbar-translate">
-            <a
-              class="navbar-brand"
-              onclick="scrollToElement('#header-section', 400);"
+            <a class="navbar-brand"
               >Mercury R<span
-                style="font-size: 10px; position: absolute; top: 25px;"
+                style="font-size: 10px; position: absolute; top: 15px;"
                 >x</span
               >
               <span style="padding-left: 8px">2020</span></a
             >
-            <button class="navbar-toggler" type="button" data-toggle="collapse">
-              <span class="navbar-toggler-bar bar1"></span>
-              <span class="navbar-toggler-bar bar1"></span>
-              <span class="navbar-toggler-bar bar1"></span>
+            <button
+              class="navbar-toggler navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navigation"
+              aria-controls="navigation-index"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-bar top-bar"></span>
+              <span class="navbar-toggler-bar middle-bar"></span>
+              <span class="navbar-toggler-bar bottom-bar"></span>
             </button>
           </div>
-          <div class="collapse navbar-collapse justify-content-end">
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navigation"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#app-section">Overview</a>
@@ -62,18 +72,10 @@
               </li>
 
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#forecast"
-                  >Your Forecast</a
-                >
+                <a class="nav-link" href="#forecast">Your Forecast</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  onclick="scrollToElement('#footer-section', 600);"
-                  >Contact</a
-                >
+                <a class="nav-link" href="#etc">Etc.</a>
               </li>
             </ul>
           </div>
@@ -442,8 +444,8 @@
                     </div>
                     <h4>Faith</h4>
                     <p>
-                      Instincts, our sixth-sense, and spiritual messages are at
-                      the forefront now.
+                      We are empowered to believe in intrinsic meaning and
+                      connectedness.
                     </p>
                   </div>
                   <!--End Card Front-->
@@ -452,10 +454,10 @@
                     <div class="meaningicon">
                       <i class="fas fa-skull"></i>
                     </div>
-                    <h4>Guilt</h4>
+                    <h4>Existential Guilt</h4>
                     <p>
-                      Are you comfortable spending time alone with your
-                      thoughts?
+                      Are you deliberately sabotaging yourself because you think
+                      you deserve it?
                     </p>
                   </div>
                   <!--End Card Back-->
@@ -469,11 +471,34 @@
               data-aos-delay="600"
               data-aos-offset="100"
             >
-              <div class="meaningicon">
-                <i class="fas fa-cloud-moon"></i>
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <!--Card Front-->
+                  <div class="flip-card-front">
+                    <div class="meaningicon">
+                      <i class="fas fa-cloud-moon"></i>
+                    </div>
+                    <h4>Dreams</h4>
+                    <p>
+                      Prophetic and psychic dreams are likely if you can beat
+                      the insomnia.
+                    </p>
+                  </div>
+                  <!--End Card Front-->
+                  <!--Card Back-->
+                  <div class="flip-card-back">
+                    <div class="meaningicon">
+                      <i class="fas fa-chess-king"></i>
+                    </div>
+                    <h4>Manipulation</h4>
+                    <p>
+                      With great emotional power comes great emotional
+                      responsibility.
+                    </p>
+                  </div>
+                  <!--End Card Back-->
+                </div>
               </div>
-              <h4>Dreams</h4>
-              <p>Use your progress as motivation.</p>
             </div>
           </div>
         </div>
@@ -880,12 +905,10 @@
                             class="button"
                             style="background: none;"
                           />
-                          <i class="fas fa-arrow-right"></i>
                         </div>
                       </div>
                     </form>
                   </div>
-
                   <!--End mc_embed_signup-->
                 </div>
                 <!--Footer-->
@@ -1078,7 +1101,6 @@
                             class="button"
                             style="background: none;"
                           />
-                          <i class="fas fa-arrow-right"></i>
                         </div>
                       </div>
                     </form>
@@ -1202,7 +1224,6 @@
                             class="button"
                             style="background: none;"
                           />
-                          <i class="fas fa-arrow-right"></i>
                         </div>
                       </div>
                     </form>
@@ -1389,6 +1410,9 @@
       </section>
       <!--End Specifics-->
 
+      <!--------------
+      --- FORECAST ---
+      --------------->
       <section class="section section-basic bg-dark" id="forecast">
         <div class="container-fluid">
           <div class="row">
@@ -1402,38 +1426,108 @@
                   You can find what house this Mercury Retrograde will be
                   occuring for you by looking for
                   <strong>12° Pisces</strong> and drawing a line from there to
-                  <strong>28° Aquarius</strong>. If you don't know how to find
-                  these points on your birth chart,
+                  <strong>28° Aquarius</strong>.
+                </p>
+                <p>
+                  If you don't know how to find these points on your birth
+                  chart,
                   <a
                     href="https://krisslumsden.com/reading-degrees/"
                     target="_blank"
                     >check out this blog post</a
                   >
                   or feel free to
-                  <a href="https://facebook.com/cosmothoughts" target="_blank">shoot me a message on Facebook</a>
+                  <a href="https://facebook.com/cosmothoughts" target="_blank"
+                    >shoot me a message on Facebook</a
+                  >
                   to get some help.
                 </p>
-                <h4>Free forecasts for each rising sign and house coming soon!</h4>
-                <p>Astrologically speaking, retrogrades can bring:</p>
-                <ul>
-                  <li>
-                    issues from the past we thought we had dealt with
-                  </li>
-                  <li>
-                    a pause in the house (area of life) the planet is transiting
-                  </li>
-                  <li>a review of the ideals the planet symbolizes</li>
-                  <li>
-                    an inability to harness the planet's energy the way normally
-                    would
-                  </li>
-                  <li>
-                    a feeling of everything going wrong or moving backwards
-                  </li>
-                  <li>
-                    an opportunity to take care of unfinished business
-                  </li>
-                </ul>
+
+                <h4>
+                  Free Mercury Retrograde forecasts for each rising sign and
+                  house coming soon!
+                </h4>
+                <p>Subscribe to our newsletter to get notified of updates:</p>
+                <!-- Begin Mailchimp Signup Form -->
+                <link
+                  href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+                  rel="stylesheet"
+                  type="text/css"
+                />
+                <style type="text/css">
+                  #mc_embed_signup {
+                    background: none;
+                    clear: left;
+                    font: 14px Helvetica, Arial, sans-serif;
+                    width: 100%;
+                  }
+
+                  .email {
+                    border-color: #6e73e1 !important;
+                  }
+                </style>
+                <div id="mc_embed_signup">
+                  <form
+                    action="https://cosmothoughts.us4.list-manage.com/subscribe/post?u=804d69935a24eab18b0088210&amp;id=8e46a71aae"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    class="validate"
+                    target="_blank"
+                    novalidate
+                  >
+                    <div id="mc_embed_signup_scroll">
+                      <input
+                        type="email"
+                        value=""
+                        name="EMAIL"
+                        class="email"
+                        id="mce-EMAIL"
+                        placeholder="email address"
+                        required
+                      />
+                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div
+                        style="position: absolute; left: -5000px;"
+                        aria-hidden="true"
+                      >
+                        <input
+                          type="text"
+                          name="b_804d69935a24eab18b0088210_8e46a71aae"
+                          tabindex="-1"
+                          value=""
+                        />
+                      </div>
+                      <div
+                        class="clear button btn btn-round divbutton"
+                        style="background: #4e54c8;
+                    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+                    background: linear-gradient(to left, #8f94fb, #4e54c8);"
+                      >
+                        <input
+                          type="submit"
+                          value="Subscribe"
+                          name="subscribe"
+                          id="mc-embedded-subscribe"
+                          class="button"
+                          style="background: none;"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!--End mc_embed_signup-->
+
+                <p class="mt-4 pt-md-4">
+                  <strong
+                    >✨ If you'd like to purchase an in-depth personal chart
+                    reading from me,
+                    <a href="https://facebook.com/cosmothoughts" target="_blank"
+                      >connect with me on Facebook</a
+                    >
+                    so we can chat and decide if we'd be a good fit.</strong
+                  >
+                </p>
               </div>
             </div>
 
@@ -1445,7 +1539,52 @@
           </div>
         </div>
       </section>
+      <!--End Forecast-->
+
+      <!---------------------
+      --- SHARE THIS PAGE ---
+      ---------------------->
+      <section class="section section-basic text-center">
+        <h2 class="title pt-0">Share this Page</h2>
+        <div class="text-center d-flex justify-content-center">
+          <div class=" meaningicon-alt">
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u=http://noellekinseydev.com/mercury-rx-landing-page"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class=" meaningicon-alt">
+            <a
+              href="https://twitter.com/home?status=http://noellekinseydev.com/mercury-rx-landing-page"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <div class="meaningicon-alt">
+            <a
+              href="https://pinterest.com/pin/create/button/?url=http://noellekinseydev.com/mercury-rx-landing-page&media=&description="
+              target="_blank"
+            >
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="text-light" style="background: rgb(57, 40, 65);">
+      <div class="py-4 text-center">
+        Made with <i class="fa fa-heart"></i> by
+        <a
+          style="color: rgb(255, 217, 255);"
+          href="https://noellekinseydev.com"
+          target="_blank"
+          >Noelle Horton</a
+        >
+        <br />using NowUI, Bootstrap 4, & Moment.js
+      </div>
+    </footer>
 
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
@@ -1461,21 +1600,6 @@
     <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
     <script
       src="assets/js/plugins/nouislider.min.js"
-      type="text/javascript"
-    ></script>
-
-    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-    <script
-      src="assets/js/plugins/bootstrap-datepicker.js"
-      type="text/javascript"
-    ></script>
-
-    <!--  Google Maps Plugin    -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-
-    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-    <script
-      src="assets/js/now-ui-kit.js?v=1.2.0"
       type="text/javascript"
     ></script>
 
